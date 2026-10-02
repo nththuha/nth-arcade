@@ -1,0 +1,119 @@
+.theme-snake {
+  --background: #0f172a;
+  --foreground: #e2e8f0;
+
+  --neon-green: #22c55e;
+  --neon-cyan: #22d3ee;
+  --neon-purple: #a855f7;
+  --neon-pink: #ec4899;
+  --neon-blue: #3b82f6;
+  --neon-yellow: #eab308;
+  --neon-red: #ef4444;
+  --neon-rose: #fb7185;
+  --neon-rose-dark: #be185d;
+  --neon-amber: #f59e0b;
+
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+
+  --surface-dark: rgba(15, 23, 42, 0.9);
+  --surface-overlay: rgba(15, 23, 42, 0.85);
+  --surface-dialog: rgba(2, 6, 23, 0.85);
+  --surface-muted: rgba(30, 41, 59, 0.3);
+  --surface-muted-strong: rgba(30, 41, 59, 0.5);
+  --surface-subtle: rgba(148, 163, 184, 0.08);
+  --surface-subtle-border: rgba(148, 163, 184, 0.15);
+  --surface-subtle-border-light: rgba(148, 163, 184, 0.1);
+  --surface-subtle-border-faint: rgba(148, 163, 184, 0.04);
+  --surface-subtle-border-dim: rgba(148, 163, 184, 0.08);
+  --surface-subtle-strong: rgba(148, 163, 184, 0.2);
+
+  --surface-green-faint: rgba(34, 197, 94, 0.05);
+  --surface-green-subtle: rgba(34, 197, 94, 0.06);
+  --surface-green-light: rgba(34, 197, 94, 0.1);
+  --surface-green-medium: rgba(34, 197, 94, 0.15);
+  --surface-green-strong: rgba(34, 197, 94, 0.2);
+  --surface-green-hover: rgba(34, 197, 94, 0.25);
+
+  --surface-cyan-subtle: rgba(34, 211, 238, 0.08);
+  --surface-cyan-light: rgba(34, 211, 238, 0.1);
+  --surface-cyan-medium: rgba(34, 211, 238, 0.15);
+  --surface-cyan-strong: rgba(34, 211, 238, 0.2);
+  --surface-cyan-hover: rgba(34, 211, 238, 0.25);
+
+  --surface-purple-faint: rgba(168, 85, 247, 0.05);
+  --surface-purple-subtle: rgba(168, 85, 247, 0.06);
+  --surface-purple-light: rgba(168, 85, 247, 0.1);
+  --surface-purple-medium: rgba(168, 85, 247, 0.15);
+  --surface-purple-strong: rgba(168, 85, 247, 0.2);
+
+  --surface-yellow-light: rgba(234, 179, 8, 0.1);
+  --surface-yellow-medium: rgba(234, 179, 8, 0.15);
+  --surface-yellow-border: rgba(234, 179, 8, 0.3);
+  --surface-yellow-border-light: rgba(234, 179, 8, 0.25);
+  --surface-yellow-glow: rgba(234, 179, 8, 0.08);
+
+  --gradient-green-cyan: linear-gradient(135deg, var(--neon-green), var(--neon-cyan));
+  --gradient-purple-pink: linear-gradient(135deg, var(--neon-purple), var(--neon-pink));
+  --gradient-red-pink: linear-gradient(135deg, var(--neon-red), var(--neon-pink));
+  --gradient-yellow: linear-gradient(135deg, var(--neon-yellow), var(--neon-amber));
+  --gradient-bg: linear-gradient(135deg, #0f172a 0%, #1a1040 40%, #0f172a 70%, #0a1628 100%);
+  --gradient-dialog: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.97) 0%,
+    rgba(10, 15, 30, 0.99) 100%
+  );
+  --gradient-green-cyan-surface: linear-gradient(
+    135deg,
+    var(--surface-green-medium),
+    var(--surface-cyan-medium)
+  );
+  --gradient-green-cyan-surface-hover: linear-gradient(
+    135deg,
+    var(--surface-green-hover),
+    var(--surface-cyan-hover)
+  );
+  --gradient-slider: linear-gradient(90deg, rgba(34, 197, 94, 0.2), rgba(34, 211, 238, 0.2));
+  --gradient-food: radial-gradient(
+    circle at 35% 35%,
+    var(--neon-rose),
+    var(--neon-pink),
+    var(--neon-rose-dark)
+  );
+
+  --orb-green: radial-gradient(circle, rgba(34, 197, 94, 0.3) 0%, transparent 70%);
+  --orb-purple: radial-gradient(circle, rgba(168, 85, 247, 0.3) 0%, transparent 70%);
+  --orb-cyan: radial-gradient(circle, rgba(34, 211, 238, 0.2) 0%, transparent 70%);
+
+  --radial-green: radial-gradient(circle at 50% 0%, var(--surface-green-medium), transparent 70%);
+  --radial-purple: radial-gradient(circle at 50% 0%, var(--surface-purple-medium), transparent 70%);
+  --radial-yellow: radial-gradient(circle at 50% 0%, var(--surface-yellow-medium), transparent 70%);
+
+  --eye-white: radial-gradient(circle, #fff 40%, rgba(255, 255, 255, 0.6));
+  --eye-glow: 0 0 4px rgba(255, 255, 255, 0.5);
+
+  --shadow-board:
+    0 0 30px rgba(34, 197, 94, 0.1), 0 0 60px rgba(34, 211, 238, 0.05),
+    0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-dialog:
+    0 0 60px rgba(168, 85, 247, 0.08), 0 0 120px rgba(34, 211, 238, 0.04),
+    0 32px 64px rgba(0, 0, 0, 0.6);
+  --shadow-food:
+    0 0 10px rgba(236, 72, 153, 0.6), 0 0 20px rgba(236, 72, 153, 0.3),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-kbd: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+  --nav-bg: var(--surface-muted-strong);
+  --nav-hover-bg: var(--surface-subtle-strong);
+  --nav-border: var(--surface-subtle-border-light);
+  --nav-fg: var(--slate-400);
+  --nav-active-bg: var(--surface-cyan-strong);
+  --nav-active-fg: var(--neon-cyan);
+
+  --glow-thumb: rgba(34, 197, 94, 0.5);
+  --glow-thumb-strong: rgba(34, 197, 94, 0.7);
+  --glow-head: rgba(34, 197, 94, 0.6);
+  --glow-food: rgba(236, 72, 153, 0.6);
+}

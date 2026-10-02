@@ -1,0 +1,78 @@
+.grid {
+  display: grid;
+  width: 100%;
+  gap: 1px;
+  padding: 0.25rem;
+  background: var(--surface-dark);
+}
+
+.cell {
+  position: relative;
+  aspect-ratio: 1 / 1;
+}
+
+.empty {
+  background: var(--surface-muted);
+  border-radius: 15%;
+  border: 1px solid var(--surface-subtle-border-faint);
+}
+
+.foodCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse-food 1.5s ease-in-out infinite;
+}
+
+.food {
+  width: 65%;
+  height: 65%;
+  border-radius: 9999px;
+  background: var(--gradient-food);
+  box-shadow: var(--shadow-food);
+}
+
+.eyes {
+  position: absolute;
+  inset: 0;
+}
+
+.eye {
+  position: absolute;
+  width: 28%;
+  height: 28%;
+  right: 14%;
+  border-radius: 9999px;
+  background: var(--eye-white);
+  box-shadow: var(--eye-glow);
+}
+
+.eyeTop {
+  top: 14%;
+}
+
+.eyeBottom {
+  bottom: 14%;
+}
+
+.pupil {
+  position: absolute;
+  width: 45%;
+  height: 45%;
+  top: 28%;
+  right: 15%;
+  border-radius: 9999px;
+  background: var(--background);
+}
+
+@keyframes pulse-food {
+  0%,
+  100% {
+    transform: scale(0.85);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}

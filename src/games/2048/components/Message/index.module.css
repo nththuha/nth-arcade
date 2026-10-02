@@ -1,0 +1,18 @@
+.container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--message-bg);
+  gap: 30px;
+  z-index: 999999;
+}
+
+.text {
+  margin: 0;
+  color: var(--message-text);
+  font-size: 32px;
+  font-weight: bold;
+}

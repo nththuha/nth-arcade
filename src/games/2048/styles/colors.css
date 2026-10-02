@@ -1,0 +1,42 @@
+.theme-2048 {
+  --primary-bg: #faf8ef;
+  --secondary-bg: #bbac9f;
+  --cell-bg: #cdbfb3;
+  --secondary-text: #fef1e8;
+  --label: #eee3da;
+  --score: #fff;
+  --text-color: #6a5641;
+  --primary-filled: #998470;
+  --primary-filled-hover: #85715e;
+  --primary-light: #ede7e1;
+  --primary-lighter: #d6cdc5;
+  --message-bg: rgb(252 231 212 / 53%);
+  --message-text: #766d65;
+
+  /* Tiles */
+  --tile-2: #eee3da;
+  --tile-4: #ecdec7;
+  --tile-8: #f3b078;
+  --tile-16: #f59464;
+  --tile-32: #f47c5f;
+  --tile-64: #f75e3d;
+  --tile-128: #ebce72;
+  --tile-256: #eccc61;
+  --tile-512: #ecc750;
+  --tile-1024: #ecc341;
+  --tile-2048: #edc12e;
+  --tile-4096: #ef666c;
+  --tile-8192: #ee4e59;
+  --tile-16384: #e14238;
+  --tile-32768: #72b4d5;
+  --tile-65536: #5da0dd;
+  --tile-131072: #027bbd;
+
+  /* GameNav */
+  --nav-bg: var(--primary-light);
+  --nav-hover-bg: var(--primary-lighter);
+  --nav-border: var(--primary-lighter);
+  --nav-fg: var(--text-color);
+  --nav-active-bg: var(--primary-filled);
+  --nav-active-fg: #fff;
+}

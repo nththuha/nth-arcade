@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: calc(var(--tile-gap) * 0.5);
+  background-color: var(--secondary-bg);
+  border-radius: 16px;
+}
+
+.cell {
+  width: var(--tile-size);
+  height: var(--tile-size);
+  margin: calc(var(--tile-gap) * 0.5);
+  border-radius: 12px;
+  background: var(--cell-bg);
+  user-select: none;
+}
+
+.tiles {
+  position: relative;
+  z-index: 2;
+}

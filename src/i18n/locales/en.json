@@ -1,0 +1,55 @@
+{
+  "common": {
+    "backToArcade": "Arcade",
+    "madeBy": "Made with ❤️ by NTH Thu Hà",
+    "language": "Language"
+  },
+  "dashboard": {
+    "tagline": "Pick a game and beat your best score",
+    "selectGame": "Select game",
+    "play": "Play",
+    "best": "Best",
+    "comingSoon": "More games coming soon",
+    "comingSoonHint": "New cabinets are being installed…",
+    "controls": "Controls"
+  },
+  "games": {
+    "2048": {
+      "title": "2048",
+      "description": "Slide the tiles and merge equal numbers to reach 2048.",
+      "controls": "Arrow keys · Swipe"
+    },
+    "snake": {
+      "title": "Snake",
+      "description": "Guide the neon snake, eat the food and grow as long as you can.",
+      "controls": "Arrow keys · Space · Swipe"
+    }
+  },
+  "game2048": {
+    "newGame": "New Game",
+    "score": "Score",
+    "best": "Best",
+    "instruction": "<b>HOW TO PLAY:</b> Use <b>arrow keys</b> (desktop) or <b>swipe</b> (mobile) to move tiles. Same numbers <b>merge into one!</b>",
+    "youWin": "You win!",
+    "gameOver": "Game over!",
+    "keepGoing": "Keep going",
+    "tryAgain": "Try again"
+  },
+  "snake": {
+    "score": "Score",
+    "paused": "PAUSED",
+    "pause": "Pause",
+    "resume": "Resume",
+    "restart": "Restart",
+    "gameOver": "Game Over",
+    "finalScore": "Final Score",
+    "guideMove": "Use arrow keys to move the snake",
+    "guidePause": "Press Space to pause / resume",
+    "bestScore": "Best Score",
+    "newHighScore": "New High Score!",
+    "pressToStart": "Press an arrow key to start",
+    "speed": "Speed",
+    "mute": "Mute sound",
+    "unmute": "Unmute sound"
+  }
+}

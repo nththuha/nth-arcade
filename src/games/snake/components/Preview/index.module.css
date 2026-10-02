@@ -1,0 +1,57 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  gap: 1px;
+  width: min(100%, 280px);
+  padding: 3px;
+  border-radius: 10px;
+  background: var(--surface-dark);
+  border: 1px solid var(--surface-green-medium);
+  box-shadow: var(--shadow-board);
+}
+
+.cell {
+  aspect-ratio: 1 / 1;
+  border-radius: 25%;
+}
+
+.empty {
+  background: var(--surface-muted);
+  border-radius: 15%;
+}
+
+.head {
+  border-radius: 30%;
+  box-shadow: 0 0 8px var(--glow-head);
+}
+
+.foodCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse-food 1.5s ease-in-out infinite;
+}
+
+.food {
+  width: 75%;
+  height: 75%;
+  border-radius: 9999px;
+  background: var(--gradient-food);
+  box-shadow: 0 0 8px var(--glow-food);
+}
+
+@keyframes pulse-food {
+  0%,
+  100% {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .foodCell {
+    animation: none;
+  }
+}

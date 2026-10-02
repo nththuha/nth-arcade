@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  margin-top: -16px;
+}
+
+.itemContainer {
+  display: flex;
+  background-color: var(--secondary-bg);
+  border-radius: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--label);
+  line-height: normal;
+}
+
+.score {
+  color: var(--score);
+  font-weight: bold;
+  font-size: 14px;
+}

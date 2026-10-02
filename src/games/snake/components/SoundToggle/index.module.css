@@ -1,0 +1,30 @@
+.button {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.muted {
+  background: var(--surface-muted-strong);
+  border: 1px solid var(--surface-subtle-border-light);
+  color: var(--slate-500);
+}
+
+.on {
+  background: var(--surface-cyan-light);
+  border: 1px solid var(--surface-cyan-hover);
+  box-shadow: 0 0 10px var(--surface-cyan-medium);
+  color: var(--neon-cyan);
+}

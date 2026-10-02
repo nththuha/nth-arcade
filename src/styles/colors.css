@@ -1,0 +1,32 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-arcade-bg: #0b0820;
+  --color-arcade-panel: #151034;
+  --color-arcade-screen: #0d0a24;
+  --color-arcade-text: #ece9ff;
+  --color-arcade-muted: #9a93c9;
+  --color-arcade-on-accent: #120c2b;
+  --color-arcade-border: rgba(255, 255, 255, 0.08);
+  --color-arcade-border-strong: rgba(255, 255, 255, 0.12);
+  --color-arcade-border-dashed: rgba(255, 255, 255, 0.1);
+  --color-arcade-surface: rgba(255, 255, 255, 0.04);
+  --color-arcade-surface-hover: rgba(255, 255, 255, 0.08);
+  --color-arcade-chip: rgba(255, 255, 255, 0.06);
+  --color-arcade-faint: rgba(255, 255, 255, 0.3);
+  --color-arcade-grid-line: rgba(255, 255, 255, 0.025);
+  --color-arcade-scanline: rgba(0, 0, 0, 0.12);
+
+  --color-neon-yellow: #ffd23f;
+  --color-neon-pink: #ff4fa3;
+  --color-neon-cyan: #3ee6ff;
+  --color-glow-pink: rgba(255, 79, 163, 0.18);
+  --color-glow-pink-strong: rgba(255, 79, 163, 0.45);
+  --color-glow-cyan: rgba(62, 230, 255, 0.1);
+  --color-glow-cyan-strong: rgba(62, 230, 255, 0.7);
+  --color-glow-cyan-soft: rgba(62, 230, 255, 0.35);
+
+  --color-accent-2048: #edc12e;
+  --color-accent-snake: #22c55e;
+}

@@ -1,0 +1,55 @@
+{
+  "common": {
+    "backToArcade": "Sảnh game",
+    "madeBy": "Được làm với ❤️ bởi NTH Thu Hà",
+    "language": "Ngôn ngữ"
+  },
+  "dashboard": {
+    "tagline": "Chọn một game và phá kỷ lục của chính bạn",
+    "selectGame": "Chọn game",
+    "play": "Chơi",
+    "best": "Kỷ lục",
+    "comingSoon": "Sắp có thêm game mới",
+    "comingSoonHint": "Máy game mới đang được lắp đặt…",
+    "controls": "Điều khiển"
+  },
+  "games": {
+    "2048": {
+      "title": "2048",
+      "description": "Trượt các ô và gộp những số giống nhau để đạt tới 2048.",
+      "controls": "Phím mũi tên · Vuốt"
+    },
+    "snake": {
+      "title": "Rắn săn mồi",
+      "description": "Điều khiển chú rắn neon, ăn mồi và dài ra hết mức có thể.",
+      "controls": "Phím mũi tên · Space · Vuốt"
+    }
+  },
+  "game2048": {
+    "newGame": "Ván mới",
+    "score": "Điểm",
+    "best": "Kỷ lục",
+    "instruction": "<b>CÁCH CHƠI:</b> Dùng <b>phím mũi tên</b> (máy tính) hoặc <b>vuốt</b> (điện thoại) để di chuyển các ô. Hai số giống nhau sẽ <b>gộp thành một!</b>",
+    "youWin": "Bạn thắng rồi!",
+    "gameOver": "Hết nước đi!",
+    "keepGoing": "Chơi tiếp",
+    "tryAgain": "Thử lại"
+  },
+  "snake": {
+    "score": "Điểm",
+    "paused": "TẠM DỪNG",
+    "pause": "Tạm dừng",
+    "resume": "Tiếp tục",
+    "restart": "Chơi lại",
+    "gameOver": "Kết thúc",
+    "finalScore": "Điểm cuối",
+    "guideMove": "Dùng phím mũi tên để điều khiển rắn",
+    "guidePause": "Nhấn Space để tạm dừng / tiếp tục",
+    "bestScore": "Kỷ lục",
+    "newHighScore": "Kỷ lục mới!",
+    "pressToStart": "Nhấn phím mũi tên để bắt đầu",
+    "speed": "Tốc độ",
+    "mute": "Tắt âm thanh",
+    "unmute": "Bật âm thanh"
+  }
+}

@@ -1,0 +1,48 @@
+.container {
+  position: absolute;
+  width: var(--tile-size);
+  height: var(--tile-size);
+  margin: calc(var(--tile-gap) * 0.5);
+  border-radius: 12px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+  transition: none;
+}
+
+.text {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.merge {
+  animation: mergeAnimation 0.1s ease-in-out;
+}
+
+@keyframes mergeAnimation {
+  0% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.appearing {
+  animation: appearingAnimation 0.1s ease-in-out;
+}
+
+@keyframes appearingAnimation {
+  0% {
+    transform: scale(0.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

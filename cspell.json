@@ -1,0 +1,7 @@
+{
+  "version": "0.2",
+  "language": "en,vi",
+  "import": ["@cspell/dict-vi-vn/cspell-ext.json"],
+  "words": ["Mantine", "nums", "scanline", "scanlines", "unmute"],
+  "ignorePaths": ["node_modules", "dist", "yarn.lock", "*.svg"]
+}

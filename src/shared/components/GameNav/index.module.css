@@ -1,0 +1,42 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px 6px 9px;
+  border-radius: var(--nav-radius, 10px);
+  background: var(--nav-bg);
+  border: 1px solid var(--nav-border);
+  color: var(--nav-fg);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background 0.15s,
+    transform 0.15s;
+}
+
+.back:hover {
+  background: var(--nav-hover-bg);
+}
+
+.back:active {
+  transform: translateY(1px);
+}
+
+.back:focus-visible {
+  outline: 2px solid var(--nav-active-bg);
+  outline-offset: 2px;
+}
+
+.backIcon {
+  width: 16px;
+  height: 16px;
+}

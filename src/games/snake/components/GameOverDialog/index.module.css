@@ -1,0 +1,233 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--surface-dialog);
+  backdrop-filter: blur(12px);
+}
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 24rem;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  background: var(--gradient-dialog);
+  border: 1px solid var(--surface-subtle-border-dim);
+  box-shadow: var(--shadow-dialog);
+  animation: dialog-enter 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.emoji {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  background: var(--gradient-red-pink);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  background: var(--surface-yellow-light);
+  border: 1px solid var(--surface-yellow-border);
+  color: var(--neon-yellow);
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+.badge svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  gap: 0.75rem;
+}
+
+.card {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.cardGlow {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+}
+
+.cardIcon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.cardLabel {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--slate-500);
+}
+
+.cardValue {
+  font-size: 1.875rem;
+  line-height: 1;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cardGreen {
+  background: var(--surface-green-faint);
+  border: 1px solid var(--surface-green-medium);
+}
+.cardGreen .cardGlow {
+  background: var(--radial-green);
+}
+.cardGreen .cardIcon {
+  background: var(--surface-green-light);
+  border: 1px solid var(--surface-green-strong);
+  color: var(--neon-green);
+}
+.cardGreen .cardValue {
+  background-image: var(--gradient-green-cyan);
+}
+
+.cardPurple {
+  background: var(--surface-purple-faint);
+  border: 1px solid var(--surface-purple-medium);
+}
+.cardPurple .cardGlow {
+  background: var(--radial-purple);
+}
+.cardPurple .cardIcon {
+  background: var(--surface-purple-light);
+  border: 1px solid var(--surface-purple-strong);
+  color: var(--neon-purple);
+}
+.cardPurple .cardValue {
+  background-image: var(--gradient-purple-pink);
+}
+
+.cardYellow {
+  background: var(--surface-yellow-light);
+  border: 1px solid var(--surface-yellow-border);
+  box-shadow: 0 0 20px var(--surface-yellow-glow);
+}
+.cardYellow .cardGlow {
+  background: var(--radial-yellow);
+}
+.cardYellow .cardIcon {
+  background: var(--surface-yellow-light);
+  border: 1px solid var(--surface-yellow-border-light);
+  color: var(--neon-yellow);
+}
+.cardYellow .cardValue {
+  background-image: var(--gradient-yellow);
+}
+
+.restart {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-family: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--gradient-green-cyan-surface);
+  border: 1px solid var(--surface-green-hover);
+  color: var(--neon-green);
+  transition: all 0.2s;
+}
+
+.restart svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.restart:hover {
+  background: var(--gradient-green-cyan-surface-hover);
+  box-shadow: 0 0 30px var(--surface-green-strong);
+  transform: translateY(-1px);
+}
+
+.restart:focus-visible {
+  outline: 2px solid var(--neon-green);
+  outline-offset: 2px;
+}
+
+@keyframes dialog-enter {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}

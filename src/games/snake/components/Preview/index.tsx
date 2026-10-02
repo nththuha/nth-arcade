@@ -1,4 +1,6 @@
+import { Direction } from '../../types'
 import '../../styles/colors.css'
+import { SnakeEyes } from '../SnakeEyes'
 import classes from './index.module.css'
 
 const COLS = 14
@@ -36,7 +38,9 @@ export default function PreviewSnake() {
             key={`${row}-${col}`}
             className={`${classes.cell} ${index === 0 ? classes.head : ''}`}
             style={{ background: snakeColor(index), opacity: 1 - (index / SNAKE.length) * 0.25 }}
-          />,
+          >
+            {index === 0 && <SnakeEyes direction={Direction.RIGHT} />}
+          </div>,
         )
       } else if (row === FOOD[0] && col === FOOD[1]) {
         cells.push(

@@ -1,6 +1,7 @@
 import { memo, type CSSProperties, type ReactNode } from 'react'
 import { positionsEqual } from '../../logic/gameUtils'
 import type { Direction, Position } from '../../types'
+import { SnakeEyes } from '../SnakeEyes'
 import classes from './index.module.css'
 
 interface GameBoardProps {
@@ -24,26 +25,6 @@ function getCellType(
   if (idx !== -1) return { type: 'snake', index: idx }
   if (positionsEqual(cell, food)) return { type: 'food', index: -1 }
   return { type: 'empty', index: -1 }
-}
-
-const directionRotation: Record<Direction, string> = {
-  RIGHT: 'rotate(0deg)',
-  DOWN: 'rotate(90deg)',
-  LEFT: 'rotate(180deg)',
-  UP: 'rotate(270deg)',
-}
-
-function SnakeEyes({ direction }: { direction: Direction }) {
-  return (
-    <div className={classes.eyes} style={{ transform: directionRotation[direction] }}>
-      <div className={`${classes.eye} ${classes.eyeTop}`}>
-        <div className={classes.pupil} />
-      </div>
-      <div className={`${classes.eye} ${classes.eyeBottom}`}>
-        <div className={classes.pupil} />
-      </div>
-    </div>
-  )
 }
 
 function getSnakeColor(index: number, total: number): string {

@@ -32,39 +32,6 @@
   box-shadow: var(--shadow-food);
 }
 
-.eyes {
-  position: absolute;
-  inset: 0;
-}
-
-.eye {
-  position: absolute;
-  width: 28%;
-  height: 28%;
-  right: 14%;
-  border-radius: 9999px;
-  background: var(--eye-white);
-  box-shadow: var(--eye-glow);
-}
-
-.eyeTop {
-  top: 14%;
-}
-
-.eyeBottom {
-  bottom: 14%;
-}
-
-.pupil {
-  position: absolute;
-  width: 45%;
-  height: 45%;
-  top: 28%;
-  right: 15%;
-  border-radius: 9999px;
-  background: var(--background);
-}
-
 @keyframes pulse-food {
   0%,
   100% {

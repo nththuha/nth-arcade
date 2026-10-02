@@ -1,4 +1,4 @@
-import { GameNav } from '@/shared/components/GameNav'
+import { GameLayout } from '@/shared/components/GameLayout'
 import { useDocumentTitle } from '@/shared/hooks/useDocumentTitle'
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -164,10 +164,8 @@ export default function Minesweeper() {
   const closeDialog = () => setDialog(null)
 
   return (
-    <div className={`theme-minesweeper ${classes.page}`}>
+    <GameLayout className={`theme-minesweeper ${classes.page}`}>
       <div className={classes.stack}>
-        <GameNav />
-
         <div className={classes.window}>
           <TitleBar
             title={t('minesweeper.title')}
@@ -257,6 +255,6 @@ export default function Minesweeper() {
       )}
 
       {dialog?.type === 'help' && <HelpDialog onClose={closeDialog} />}
-    </div>
+    </GameLayout>
   )
 }

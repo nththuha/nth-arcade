@@ -3,11 +3,6 @@
   --tile-gap: 10px;
   --nav-radius: 12px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100dvh;
-  width: 100%;
   background-color: var(--primary-bg);
   color: var(--text-color);
   font-family:
@@ -25,11 +20,6 @@
   align-items: center;
   gap: 10px;
   width: calc(var(--tile-size) * 4 + var(--tile-gap) * 5);
-  padding: 12px 0 16px;
-}
-
-.nav {
-  margin-bottom: -4px;
 }
 
 .header {

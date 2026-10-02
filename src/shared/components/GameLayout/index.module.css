@@ -1,0 +1,26 @@
+.layout {
+  --nav-space: 44px;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100dvh;
+}
+
+.nav {
+  position: relative;
+  padding: 12px 16px 0;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 16px 16px calc(16px + var(--nav-space));
+}
+
+@media (max-height: 760px), (max-width: 480px) {
+  .main {
+    padding: 12px 8px 16px;
+  }
+}

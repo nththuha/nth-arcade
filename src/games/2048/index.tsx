@@ -1,4 +1,4 @@
-import { GameNav } from '@/shared/components/GameNav'
+import { GameLayout } from '@/shared/components/GameLayout'
 import { useDocumentTitle } from '@/shared/hooks/useDocumentTitle'
 import { useTranslation } from 'react-i18next'
 import Board from './components/Board'
@@ -16,9 +16,8 @@ export default function Game2048() {
   useDocumentTitle('2048')
 
   return (
-    <div className={`theme-2048 ${classes.container}`}>
+    <GameLayout className={`theme-2048 ${classes.container}`}>
       <div className={classes.content}>
-        <GameNav className={classes.nav} />
         <h1 className={classes.header}>2048</h1>
         <Score score={score} bestScore={bestScore} />
         <Button fullWidth onClick={resetGame}>
@@ -34,6 +33,6 @@ export default function Game2048() {
         />
         <Footer />
       </div>
-    </div>
+    </GameLayout>
   )
 }

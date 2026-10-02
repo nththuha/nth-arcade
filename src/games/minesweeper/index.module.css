@@ -1,11 +1,6 @@
 .page {
   --nav-radius: 4px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100dvh;
-  padding: 16px;
   background:
     radial-gradient(ellipse 18% 7% at 18% 20%, var(--desktop-cloud), transparent 70%),
     radial-gradient(ellipse 14% 5% at 27% 26%, var(--desktop-cloud), transparent 70%),
@@ -20,7 +15,6 @@
 .stack {
   display: flex;
   flex-direction: column;
-  gap: 12px;
   max-width: 100%;
 }
 
@@ -60,10 +54,4 @@
 .boardScroll {
   max-width: 100%;
   overflow-x: auto;
-}
-
-@media (max-width: 480px) {
-  .page {
-    padding: 12px 6px;
-  }
 }

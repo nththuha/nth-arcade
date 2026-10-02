@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { GameNav } from '@/shared/components/GameNav'
+import { GameLayout } from '@/shared/components/GameLayout'
 import { PauseIcon, PlayIcon, RotateCcwIcon } from '@/shared/components/icons'
 import { useDocumentTitle } from '@/shared/hooks/useDocumentTitle'
 import { useCallback, useRef, useState } from 'react'
@@ -58,19 +58,22 @@ export default function SnakeGame() {
   }, [muted, audio])
 
   return (
-    <div className={`theme-snake ${classes.page}`}>
-      <div className={classes.orbs}>
-        <div className={`${classes.orb} ${classes.orbGreen}`} />
-        <div className={`${classes.orb} ${classes.orbPurple}`} />
-        <div className={`${classes.orb} ${classes.orbCyan}`} />
-      </div>
+    <GameLayout
+      className={`theme-snake ${classes.page}`}
+      decor={
+        <>
+          <div className={classes.orbs}>
+            <div className={`${classes.orb} ${classes.orbGreen}`} />
+            <div className={`${classes.orb} ${classes.orbPurple}`} />
+            <div className={`${classes.orb} ${classes.orbCyan}`} />
+          </div>
 
-      <ParticleBackground />
-
+          <ParticleBackground />
+        </>
+      }
+    >
       <div className={classes.cardWrap}>
         <div className={classes.card}>
-          <GameNav />
-
           <div className={classes.headerRow}>
             <h1 className={classes.title}>🐍 SNAKE</h1>
             <SoundToggle muted={muted} onToggle={handleSoundToggle} />
@@ -140,6 +143,6 @@ export default function SnakeGame() {
           />
         </div>
       </div>
-    </div>
+    </GameLayout>
   )
 }

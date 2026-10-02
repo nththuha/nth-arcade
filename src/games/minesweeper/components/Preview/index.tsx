@@ -1,5 +1,5 @@
-import type { Cell as CellData } from '../../types'
 import '../../styles/colors.css'
+import type { Cell as CellData } from '../../types'
 import { Cell } from '../Cell'
 import classes from './index.module.css'
 

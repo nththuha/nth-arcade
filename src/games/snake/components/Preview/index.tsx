@@ -1,5 +1,5 @@
-import { Direction } from '../../types'
 import '../../styles/colors.css'
+import { Direction } from '../../types'
 import { SnakeEyes } from '../SnakeEyes'
 import classes from './index.module.css'
 

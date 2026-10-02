@@ -22,11 +22,9 @@ export default function Preview2048() {
               ? {
                   backgroundColor: tileColor(value),
                   color: value <= 4 ? 'var(--text-color)' : 'var(--secondary-text)',
-                  animationDelay: `${(i % 5) * 0.4}s`,
                 }
               : undefined
           }
-          data-filled={value > 0 || undefined}
         >
           {value || ''}
         </div>

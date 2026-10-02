@@ -19,24 +19,3 @@
   font-size: 13px;
   font-weight: 800;
 }
-
-.cell[data-filled] {
-  animation: bob 3.2s ease-in-out infinite;
-}
-
-@keyframes bob {
-  0%,
-  86%,
-  100% {
-    transform: scale(1);
-  }
-  92% {
-    transform: scale(1.12);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .cell[data-filled] {
-    animation: none;
-  }
-}

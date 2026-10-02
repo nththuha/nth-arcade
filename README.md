@@ -8,6 +8,7 @@ A collection of small browser games built with Vite, React and TypeScript, with 
 | `/2048`        | 2048: arrow keys or swipe                                                                    |
 | `/snake`       | Snake: arrow keys, Space to pause, swipe                                                     |
 | `/minesweeper` | Minesweeper (classic Windows XP look): click, right-click / long-press to flag, F2 / F4 / F5 |
+| `/flappy-bird` | Flappy Bird: Space / ↑ / click / tap to flap, P or Esc to pause                              |
 
 ## Getting started
 
@@ -33,6 +34,7 @@ src/
     2048/              index.tsx (game page), styles/colors.css, logic/, hooks/, components/
     snake/             index.tsx (game page), styles/colors.css, logic/, hooks/, components/
     minesweeper/       index.tsx (game page), styles/colors.css, logic/, hooks/, components/
+    flappy-bird/       index.tsx (game page), styles/colors.css, logic/, render/ (canvas), hooks/, components/
 ```
 
 ### Conventions

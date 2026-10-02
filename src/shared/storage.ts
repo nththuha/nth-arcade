@@ -2,6 +2,7 @@ export const STORAGE_KEYS = {
   LANGUAGE: 'nth-arcade:language',
   BEST_2048: 'nth-arcade:2048:best-score',
   BEST_SNAKE: 'nth-arcade:snake:best-score',
+  BEST_FLAPPY: 'nth-arcade:flappy-bird:best-score',
   MINESWEEPER_SETTINGS: 'nth-arcade:minesweeper:settings',
   MINESWEEPER_STATS: 'nth-arcade:minesweeper:stats',
 }

@@ -29,6 +29,11 @@
       "title": "Dò mìn",
       "description": "Dọn sạch bãi mìn mà không giẫm phải quả nào. Các con số cho biết có bao nhiêu mìn ở quanh đó.",
       "controls": "Nhấn chuột · Chuột phải · Giữ lâu"
+    },
+    "flappy_bird": {
+      "title": "Flappy Bird",
+      "description": "Chạm để chú chim vỗ cánh bay qua khe giữa các ống. Chỉ cần một ngón tay.",
+      "controls": "Space · ↑ · Nhấn chuột · Chạm"
     }
   },
   "game2048": {
@@ -126,5 +131,20 @@
     "marks": "Dấu chấm hỏi (?)",
     "minimize": "Thu nhỏ",
     "maximize": "Phóng to"
+  },
+  "flappy": {
+    "start": "Bắt đầu",
+    "tap": "Chạm",
+    "score": "Điểm",
+    "best": "Kỷ lục",
+    "new_best": "Mới",
+    "medal": "Huy chương",
+    "play_again": "Chơi lại",
+    "menu": "Menu",
+    "pause": "Tạm dừng",
+    "resume": "Tiếp tục",
+    "paused": "Tạm dừng",
+    "hint": "Space, ↑ hoặc nhấn chuột để vỗ cánh",
+    "stage": "Màn chơi Flappy Bird"
   }
 }

@@ -2,13 +2,14 @@ import { STORAGE_KEYS, loadNumber } from '@/shared/storage'
 import type { TFunction } from 'i18next'
 import { lazy, type ComponentType, type LazyExoticComponent } from 'react'
 import Preview2048 from './2048/components/Preview'
+import PreviewFlappy from './flappy-bird/components/Preview'
 import PreviewMinesweeper from './minesweeper/components/Preview'
 import { loadSettings } from './minesweeper/hooks/useSettings'
 import { loadStats } from './minesweeper/hooks/useStats'
 import PreviewSnake from './snake/components/Preview'
 
 export interface GameEntry {
-  id: '2048' | 'snake' | 'minesweeper'
+  id: '2048' | 'snake' | 'minesweeper' | 'flappy_bird'
   path: string
   loadBest: (t: TFunction) => string
   accent: string
@@ -45,5 +46,13 @@ export const GAMES: GameEntry[] = [
     accent: 'var(--color-accent-minesweeper)',
     Preview: PreviewMinesweeper,
     Component: lazy(() => import('./minesweeper')),
+  },
+  {
+    id: 'flappy_bird',
+    path: '/flappy-bird',
+    loadBest: () => String(loadNumber(STORAGE_KEYS.BEST_FLAPPY)),
+    accent: 'var(--color-accent-flappy)',
+    Preview: PreviewFlappy,
+    Component: lazy(() => import('./flappy-bird')),
   },
 ]

@@ -1,0 +1,28 @@
+.button {
+  appearance: none;
+  min-width: 30cqw;
+  padding: 1.6cqw 4cqw 2cqw;
+  border: 0.9cqw solid var(--button-border);
+  outline: 0.9cqw solid var(--button-outline);
+  background: var(--button);
+  box-shadow: 0 1.2cqw 0 var(--button-outline);
+  color: var(--button-text);
+  font-family: 'VT323', monospace;
+  font-size: 7cqw;
+  line-height: 1;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--button-hover);
+}
+
+.button:active {
+  transform: translateY(1cqw);
+  box-shadow: 0 0.2cqw 0 var(--button-outline);
+}
+
+.button:focus-visible {
+  outline-color: var(--text);
+}

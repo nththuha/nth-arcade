@@ -1,0 +1,53 @@
+.score {
+  position: absolute;
+  top: 9%;
+  left: 0;
+  right: 0;
+  color: var(--text);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9cqw;
+  text-align: center;
+  text-shadow:
+    0.8cqw 0 var(--text-outline),
+    -0.8cqw 0 var(--text-outline),
+    0 0.8cqw var(--text-outline),
+    0 -0.8cqw var(--text-outline),
+    0.8cqw 0.8cqw var(--text-outline),
+    -0.8cqw -0.8cqw var(--text-outline),
+    0.8cqw -0.8cqw var(--text-outline),
+    -0.8cqw 0.8cqw var(--text-outline);
+  pointer-events: none;
+}
+
+.pause {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9cqw;
+  height: 9cqw;
+  padding: 0;
+  border: 0.8cqw solid var(--button-border);
+  outline: 0.8cqw solid var(--button-outline);
+  background: var(--button);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.pauseIcon {
+  width: 3.6cqw;
+  height: 4cqw;
+  border-left: 1.2cqw solid var(--button-text);
+  border-right: 1.2cqw solid var(--button-text);
+}
+
+.playIcon {
+  width: 0;
+  height: 0;
+  margin-left: 0.8cqw;
+  border-top: 2cqw solid transparent;
+  border-bottom: 2cqw solid transparent;
+  border-left: 3.2cqw solid var(--button-text);
+}

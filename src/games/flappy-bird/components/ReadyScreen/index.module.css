@@ -1,0 +1,82 @@
+.screen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+.title {
+  margin: 34% 0 0;
+  color: var(--ready);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8.6cqw;
+  font-weight: 400;
+  text-shadow:
+    0.7cqw 0 var(--ready-inner),
+    -0.7cqw 0 var(--ready-inner),
+    0 0.7cqw var(--ready-inner),
+    0 -0.7cqw var(--ready-inner),
+    1.4cqw 0 var(--title-outline),
+    -1.4cqw 0 var(--title-outline),
+    0 1.4cqw var(--title-outline),
+    0 -1.4cqw var(--title-outline),
+    0 2.2cqw var(--title-outline);
+}
+
+.hint {
+  position: absolute;
+  top: 54%;
+  left: 52%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1cqw;
+  animation: bob 1s ease-in-out infinite;
+}
+
+.arrow {
+  color: var(--text);
+  font-size: 5cqw;
+  text-shadow: 0 0 0.6cqw var(--title-outline);
+}
+
+.tap {
+  padding: 0.6cqw 2.4cqw 1cqw;
+  border: 0.6cqw solid var(--button-border);
+  background: var(--badge);
+  color: var(--text);
+  font-family: 'VT323', monospace;
+  font-size: 6cqw;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.text {
+  position: absolute;
+  top: 70%;
+  margin: 0;
+  padding: 0 6cqw;
+  color: var(--text);
+  font-family: 'VT323', monospace;
+  font-size: 6cqw;
+  text-align: center;
+  text-shadow:
+    0.5cqw 0 var(--title-outline),
+    -0.5cqw 0 var(--title-outline),
+    0 0.5cqw var(--title-outline),
+    0 -0.5cqw var(--title-outline);
+}
+
+@keyframes bob {
+  50% {
+    transform: translateY(-1.5cqw);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hint {
+    animation: none;
+  }
+}

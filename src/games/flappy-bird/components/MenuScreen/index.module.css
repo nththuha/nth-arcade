@@ -1,0 +1,47 @@
+.screen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 28% 0 0;
+  color: var(--title);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8.4cqw;
+  font-weight: 400;
+  text-align: center;
+  text-shadow:
+    0.9cqw 0 var(--title-outline),
+    -0.9cqw 0 var(--title-outline),
+    0 0.9cqw var(--title-outline),
+    0 -0.9cqw var(--title-outline),
+    0.9cqw 0.9cqw var(--title-outline),
+    -0.9cqw -0.9cqw var(--title-outline),
+    0.9cqw -0.9cqw var(--title-outline),
+    -0.9cqw 0.9cqw var(--title-outline),
+    0 1.8cqw var(--title-outline);
+}
+
+.bottom {
+  position: absolute;
+  top: 66%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3cqw;
+}
+
+.best {
+  margin: 0;
+  color: var(--text);
+  font-family: 'VT323', monospace;
+  font-size: 6.5cqw;
+  text-shadow:
+    0.5cqw 0 var(--title-outline),
+    -0.5cqw 0 var(--title-outline),
+    0 0.5cqw var(--title-outline),
+    0 -0.5cqw var(--title-outline);
+}

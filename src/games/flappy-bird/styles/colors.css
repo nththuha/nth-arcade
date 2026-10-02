@@ -1,0 +1,72 @@
+.theme-flappy {
+  --sky: #4ec0ca;
+  --cloud: #e9fcd9;
+  --cloud-shade: #d4f2be;
+  --city: #a7e3cd;
+  --city-shade: #8fd6bd;
+  --city-window: #d8f6ea;
+  --bush: #82e07a;
+  --bush-shade: #5fcb5c;
+
+  --ground: #ded895;
+  --ground-edge: #543847;
+  --ground-stripe-light: #9ce659;
+  --ground-stripe-dark: #73bf2e;
+  --ground-line: #558022;
+  --ground-shade: #d0c874;
+
+  --pipe: #73bf2e;
+  --pipe-light: #9ce659;
+  --pipe-highlight: #e4fdbf;
+  --pipe-dark: #558022;
+  --pipe-outline: #543847;
+
+  --bird-outline: #543847;
+  --bird-body: #f8c62f;
+  --bird-body-light: #fbe27a;
+  --bird-belly: #f6f0c5;
+  --bird-eye: #fff;
+  --bird-pupil: #000;
+  --bird-beak: #fc5c2c;
+  --bird-beak-dark: #d63b0e;
+  --bird-wing: #fdf8dd;
+
+  --text: #fff;
+  --text-outline: #000;
+  --title: #e4f6a2;
+  --title-outline: #543847;
+  --ready: #f7a92d;
+  --ready-inner: #fff;
+  --over: #f7a92d;
+
+  --button: #e86101;
+  --button-hover: #f97a1f;
+  --button-border: #fff;
+  --button-outline: #543847;
+  --button-text: #fff;
+
+  --panel: #ded895;
+  --panel-inner: #cfc77a;
+  --panel-border: #543847;
+  --panel-label: #e86101;
+  --badge: #fc5c2c;
+
+  --medal-bronze: #d58b4a;
+  --medal-silver: #d7d7d7;
+  --medal-gold: #f3c43c;
+  --medal-platinum: #eaf6f8;
+  --medal-rim: #9a6a3b;
+  --medal-empty: #c8bf72;
+
+  --flash: #fff;
+  --page: #3a9fb0;
+  --frame: #543847;
+  --frame-shadow: rgba(0, 0, 0, 0.35);
+
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  --nav-hover-bg: #fff;
+  --nav-border: var(--frame);
+  --nav-fg: var(--frame);
+  --nav-active-bg: var(--button);
+  --nav-active-fg: #fff;
+}

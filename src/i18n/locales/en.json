@@ -29,6 +29,11 @@
       "title": "Minesweeper",
       "description": "Clear the minefield without setting off a mine. Numbers tell you how many mines are hiding nearby.",
       "controls": "Click · Right-click · Long-press"
+    },
+    "flappy_bird": {
+      "title": "Flappy Bird",
+      "description": "Tap to flap through the gaps between the pipes. One touch is all it takes.",
+      "controls": "Space · ↑ · Click · Tap"
     }
   },
   "game2048": {
@@ -126,5 +131,20 @@
     "marks": "Marks (?)",
     "minimize": "Minimize",
     "maximize": "Maximize"
+  },
+  "flappy": {
+    "start": "Start",
+    "tap": "Tap",
+    "score": "Score",
+    "best": "Best",
+    "new_best": "New",
+    "medal": "Medal",
+    "play_again": "Play",
+    "menu": "Menu",
+    "pause": "Pause",
+    "resume": "Resume",
+    "paused": "Paused",
+    "hint": "Space, ↑ or click to flap",
+    "stage": "Flappy Bird game"
   }
 }

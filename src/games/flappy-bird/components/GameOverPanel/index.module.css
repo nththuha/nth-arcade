@@ -1,0 +1,122 @@
+.screen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 26% 0 0;
+  color: var(--over);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8.6cqw;
+  font-weight: 400;
+  text-shadow:
+    0.7cqw 0 var(--ready-inner),
+    -0.7cqw 0 var(--ready-inner),
+    0 0.7cqw var(--ready-inner),
+    0 -0.7cqw var(--ready-inner),
+    1.4cqw 0 var(--title-outline),
+    -1.4cqw 0 var(--title-outline),
+    0 1.4cqw var(--title-outline),
+    0 -1.4cqw var(--title-outline),
+    0 2.2cqw var(--title-outline);
+  animation: drop 0.3s ease-out;
+}
+
+.panel {
+  display: flex;
+  justify-content: space-between;
+  gap: 4cqw;
+  width: 78cqw;
+  margin-top: 7cqw;
+  padding: 4cqw 5cqw;
+  border: 1cqw solid var(--panel-border);
+  border-radius: 2cqw;
+  background: var(--panel);
+  box-shadow: inset 0 -1.4cqw 0 var(--panel-inner);
+  animation: rise 0.45s ease-out 0.25s backwards;
+}
+
+.medalBox,
+.scores {
+  display: flex;
+  flex-direction: column;
+}
+
+.medalBox {
+  align-items: center;
+  gap: 2cqw;
+}
+
+.scores {
+  align-items: flex-end;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 1.6cqw;
+  color: var(--panel-label);
+  font-family: 'VT323', monospace;
+  font-size: 5.6cqw;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.number {
+  margin-bottom: 1.6cqw;
+  color: var(--text);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 5.4cqw;
+  text-shadow:
+    0.6cqw 0 var(--text-outline),
+    -0.6cqw 0 var(--text-outline),
+    0 0.6cqw var(--text-outline),
+    0 -0.6cqw var(--text-outline);
+}
+
+.medal {
+  width: 15cqw;
+  height: 15cqw;
+  border: 1cqw solid var(--medal-rim);
+  border-radius: 50%;
+  box-shadow: inset -1.4cqw -1.4cqw 0 var(--frame-shadow);
+}
+
+.badge {
+  padding: 0.2cqw 1.2cqw;
+  border-radius: 1cqw;
+  background: var(--badge);
+  color: var(--text);
+  font-size: 4.4cqw;
+}
+
+.buttons {
+  display: flex;
+  gap: 4cqw;
+  margin-top: 8cqw;
+  animation: rise 0.45s ease-out 0.4s backwards;
+}
+
+@keyframes drop {
+  from {
+    transform: translateY(-6cqw);
+    opacity: 0;
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(60cqw);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .title,
+  .panel,
+  .buttons {
+    animation: none;
+  }
+}

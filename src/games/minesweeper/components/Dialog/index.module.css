@@ -1,0 +1,47 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: var(--overlay);
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 420px;
+  max-height: calc(100dvh - 32px);
+  padding: 0 3px 3px;
+  border: 1px solid var(--frame-border);
+  border-radius: 8px 8px 0 0;
+  background: var(--frame-inner);
+  box-shadow: 4px 6px 18px var(--frame-shadow);
+}
+
+.window > :first-child {
+  margin: 0 -3px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px 14px 12px;
+  overflow-y: auto;
+  background: var(--dialog-bg);
+  color: var(--dialog-text);
+  font-family: Tahoma, 'Segoe UI', sans-serif;
+  font-size: 12px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 4px;
+}

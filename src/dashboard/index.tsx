@@ -1,7 +1,6 @@
 import { GAMES } from '@/games/registry'
 import { LanguageToggle } from '@/shared/components/LanguageToggle'
 import { useDocumentTitle } from '@/shared/hooks/useDocumentTitle'
-import { loadNumber } from '@/shared/storage'
 import type { CSSProperties } from 'react'
 import { useTranslation } from 'react-i18next'
 import { GameCard } from './components/GameCard'
@@ -40,7 +39,7 @@ export default function Dashboard() {
             <GameCard
               key={game.id}
               game={game}
-              bestScore={loadNumber(game.bestScoreKey)}
+              best={game.loadBest(t)}
               style={{ '--accent': game.accent } as CSSProperties}
             />
           ))}

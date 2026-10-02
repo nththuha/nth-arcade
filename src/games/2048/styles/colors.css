@@ -13,7 +13,6 @@
   --message-bg: rgb(252 231 212 / 53%);
   --message-text: #766d65;
 
-  /* Tiles */
   --tile-2: #eee3da;
   --tile-4: #ecdec7;
   --tile-8: #f3b078;
@@ -32,7 +31,6 @@
   --tile-65536: #5da0dd;
   --tile-131072: #027bbd;
 
-  /* GameNav */
   --nav-bg: var(--primary-light);
   --nav-hover-bg: var(--primary-lighter);
   --nav-border: var(--primary-lighter);

@@ -1,0 +1,12 @@
+.board {
+  --cell-size: clamp(22px, calc((100vw - 64px) / var(--cols)), var(--max-cell));
+
+  display: grid;
+  grid-template-columns: repeat(var(--cols), var(--cell-size));
+  width: max-content;
+  border: 3px solid;
+  border-color: var(--bevel-shadow) var(--bevel-light) var(--bevel-light) var(--bevel-shadow);
+  background: var(--face);
+  touch-action: pan-x pan-y;
+  cursor: default;
+}

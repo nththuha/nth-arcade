@@ -51,9 +51,7 @@ export function useGameAudio() {
           createBgmOscillators(ctx, gain)
         }
       }, 1000)
-    } catch {
-      // Web Audio not available
-    }
+    } catch {}
   }, [])
 
   const stop = useCallback(() => {

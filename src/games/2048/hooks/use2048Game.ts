@@ -67,7 +67,6 @@ export function use2048Game() {
     [bestScore, board, gameOver, hasWon, score, tiles, won],
   )
 
-  // Keyboard
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       const direction = KEY_DIRECTIONS[e.key]
@@ -80,7 +79,6 @@ export function use2048Game() {
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [move])
 
-  // Swipe
   useEffect(() => {
     let touchStart: { x: number; y: number } | null = null
 

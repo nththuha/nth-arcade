@@ -1,0 +1,69 @@
+.page {
+  --nav-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  padding: 16px;
+  background:
+    radial-gradient(ellipse 18% 7% at 18% 20%, var(--desktop-cloud), transparent 70%),
+    radial-gradient(ellipse 14% 5% at 27% 26%, var(--desktop-cloud), transparent 70%),
+    radial-gradient(ellipse 20% 7% at 80% 14%, var(--desktop-cloud), transparent 70%),
+    radial-gradient(ellipse 12% 5% at 90% 34%, var(--desktop-cloud), transparent 70%),
+    radial-gradient(ellipse 95% 45% at 30% 108%, var(--desktop-hill) 0 62%, transparent 63%),
+    radial-gradient(ellipse 90% 40% at 95% 112%, var(--desktop-hill-dark) 0 60%, transparent 61%),
+    linear-gradient(180deg, var(--desktop-sky-top), var(--desktop-sky-bottom) 70%);
+  font-family: Tahoma, 'Segoe UI', sans-serif;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 100%;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 0 3px 3px;
+  border: 1px solid var(--frame-border);
+  border-radius: 8px 8px 0 0;
+  background: var(--frame-inner);
+  box-shadow: 4px 8px 24px var(--frame-shadow);
+}
+
+.window > :first-child {
+  margin: 0 -3px;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: var(--menu-bg);
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  padding: 6px;
+  background: var(--face);
+  border: 3px solid;
+  border-color: var(--bevel-light) var(--bevel-shadow) var(--bevel-shadow) var(--bevel-light);
+}
+
+.boardScroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 12px 6px;
+  }
+}

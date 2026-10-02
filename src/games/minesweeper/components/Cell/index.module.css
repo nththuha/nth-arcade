@@ -1,0 +1,65 @@
+.cell {
+  --bevel: max(2px, calc(var(--cell-size) * 0.11));
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--cell-size);
+  height: var(--cell-size);
+  font-family: Tahoma, Verdana, 'Segoe UI', sans-serif;
+  font-size: calc(var(--cell-size) * 0.62);
+  font-weight: 900;
+  line-height: 1;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.hidden {
+  background: var(--face);
+  border: var(--bevel) solid;
+  border-color: var(--bevel-light) var(--bevel-shadow) var(--bevel-shadow) var(--bevel-light);
+}
+
+.revealed,
+.pressed {
+  background: var(--revealed-bg);
+  border-top: 1px solid var(--revealed-edge);
+  border-left: 1px solid var(--revealed-edge);
+}
+
+.exploded {
+  background: var(--exploded);
+}
+
+.icon {
+  width: 70%;
+  height: 70%;
+}
+
+.flag {
+  width: 72%;
+  height: 72%;
+}
+
+.question {
+  color: var(--question);
+}
+
+.animate.mineShown {
+  animation: mine-pop 0.28s ease-out backwards;
+}
+
+@keyframes mine-pop {
+  from {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate.mineShown {
+    animation: none;
+  }
+}

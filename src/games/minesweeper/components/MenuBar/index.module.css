@@ -1,0 +1,91 @@
+.bar {
+  display: flex;
+  padding: 1px 2px;
+  background: var(--menu-bg);
+  border-bottom: 1px solid var(--menu-border);
+  font-family: Tahoma, 'Segoe UI', sans-serif;
+}
+
+.menu {
+  position: relative;
+}
+
+.trigger {
+  appearance: none;
+  padding: 2px 7px;
+  border: 0;
+  background: transparent;
+  color: var(--menu-text);
+  font: inherit;
+  font-size: 12px;
+  cursor: default;
+}
+
+.trigger:hover,
+.trigger[aria-expanded='true'] {
+  background: var(--menu-hover-bg);
+  color: var(--menu-hover-text);
+}
+
+.trigger:focus-visible,
+.item:focus-visible {
+  outline: 1px dotted currentColor;
+  outline-offset: -2px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  min-width: 190px;
+  padding: 2px;
+  background: var(--menu-bg);
+  border: 1px solid var(--menu-border);
+  box-shadow: 2px 2px 3px var(--menu-shadow);
+}
+
+.item {
+  appearance: none;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 3px 10px 3px 22px;
+  border: 0;
+  background: transparent;
+  color: var(--menu-text);
+  font: inherit;
+  font-size: 12px;
+  text-align: left;
+  cursor: default;
+}
+
+.item:hover {
+  background: var(--menu-hover-bg);
+  color: var(--menu-hover-text);
+}
+
+.check {
+  position: absolute;
+  left: 7px;
+}
+
+.separator {
+  margin-top: 7px;
+}
+
+.separator::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 1px;
+  right: 1px;
+  border-top: 1px solid var(--menu-border);
+}
+
+.shortcut {
+  opacity: 0.85;
+}

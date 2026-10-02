@@ -1,0 +1,21 @@
+.display {
+  display: flex;
+  gap: 1px;
+  padding: 2px;
+  background: var(--led-bg);
+  border: 1px solid;
+  border-color: var(--bevel-shadow) var(--bevel-light) var(--bevel-light) var(--bevel-shadow);
+}
+
+.digit {
+  width: 15px;
+  height: 27px;
+}
+
+.on {
+  fill: var(--led-on);
+}
+
+.off {
+  fill: var(--led-off);
+}

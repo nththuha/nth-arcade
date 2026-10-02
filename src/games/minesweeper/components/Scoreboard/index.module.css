@@ -1,0 +1,64 @@
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 5px 6px;
+  background: var(--face);
+  border: 2px solid;
+  border-color: var(--bevel-shadow) var(--bevel-light) var(--bevel-light) var(--bevel-shadow);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.face,
+.flagMode {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  background: var(--face);
+  border: 3px solid;
+  border-color: var(--bevel-light) var(--bevel-shadow) var(--bevel-shadow) var(--bevel-light);
+  outline: 1px solid var(--bevel-shadow);
+  cursor: default;
+}
+
+.face:active,
+.flagMode[aria-pressed='true'] {
+  border-width: 2px 1px 1px 2px;
+  border-color: var(--bevel-shadow);
+  padding: 1px 0 0 1px;
+}
+
+.face:focus-visible,
+.flagMode:focus-visible {
+  outline: 1px dotted var(--menu-text);
+}
+
+.smiley {
+  width: 26px;
+  height: 26px;
+}
+
+.flagMode {
+  display: none;
+}
+
+.flagIcon {
+  width: 22px;
+  height: 22px;
+}
+
+@media (pointer: coarse) {
+  .flagMode {
+    display: flex;
+  }
+}

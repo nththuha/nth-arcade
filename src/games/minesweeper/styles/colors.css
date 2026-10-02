@@ -1,0 +1,90 @@
+.theme-minesweeper {
+  --desktop-sky-top: #1f5fd2;
+  --desktop-sky-bottom: #a7d0f5;
+  --desktop-cloud: rgba(255, 255, 255, 0.9);
+  --desktop-hill: #58a62d;
+  --desktop-hill-dark: #2e7d16;
+
+  --frame-border: #0831d9;
+  --frame-inner: #0a55e6;
+  --frame-shadow: rgba(0, 0, 0, 0.45);
+  --title-top: #3d95ff;
+  --title-mid: #0058ee;
+  --title-bottom: #0042c4;
+  --title-text: #fff;
+  --title-text-shadow: rgba(10, 30, 90, 0.8);
+  --title-button-top: #4a95ff;
+  --title-button-bottom: #1d5ee8;
+  --title-button-border: #fff;
+  --close-top: #ec8a72;
+  --close-bottom: #c5391a;
+
+  --menu-bg: #ece9d8;
+  --menu-text: #000;
+  --menu-hover-bg: #316ac5;
+  --menu-hover-text: #fff;
+  --menu-border: #aca899;
+  --menu-shortcut: #555;
+  --menu-shadow: rgba(0, 0, 0, 0.35);
+
+  --face: #c0c0c0;
+  --bevel-light: #fff;
+  --bevel-shadow: #808080;
+  --revealed-bg: #c0c0c0;
+  --revealed-edge: #808080;
+  --exploded: #ff0000;
+
+  --num-1: #0000ff;
+  --num-2: #008000;
+  --num-3: #ff0000;
+  --num-4: #000080;
+  --num-5: #800000;
+  --num-6: #008080;
+  --num-7: #000;
+  --num-8: #808080;
+  --question: #000;
+
+  --mine-body: #000;
+  --mine-shine: #fff;
+  --flag-red: #ff0000;
+  --flag-red-dark: #d00000;
+  --flag-pole: #000;
+  --wrong-mark: #ff0000;
+
+  --led-bg: #000;
+  --led-on: #ff0000;
+  --led-off: #3d0000;
+
+  --smiley: #ffff00;
+  --smiley-line: #000;
+  --smiley-shade: #c8c800;
+  --smiley-glasses: #000;
+
+  --overlay: rgba(0, 0, 0, 0.2);
+  --dialog-bg: #ece9d8;
+  --dialog-text: #000;
+  --dialog-muted: #444;
+  --dialog-heading: #0b3fb3;
+  --dialog-divider: #c3c0ae;
+  --dialog-highlight: #ffffe1;
+  --dialog-highlight-border: #a29e86;
+  --list-bg: #fff;
+  --list-selected-bg: #316ac5;
+  --list-selected-text: #fff;
+  --input-border: #7f9db9;
+  --input-bg: #fff;
+  --button-top: #fff;
+  --button-bottom: #e3e1d5;
+  --button-border: #003c74;
+  --button-hover: #f8b330;
+  --button-active-top: #e3e2da;
+  --button-active-bottom: #f1f0ea;
+  --focus-ring: #7a9bf0;
+
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  --nav-hover-bg: #fff;
+  --nav-border: rgba(0, 0, 0, 0.2);
+  --nav-fg: #0a246a;
+  --nav-active-bg: #316ac5;
+  --nav-active-fg: #fff;
+}

@@ -7,11 +7,11 @@ import classes from './index.module.css'
 
 type GameCardProps = {
   game: GameEntry
-  bestScore: number
+  best: string
   style?: CSSProperties
 }
 
-export function GameCard({ game, bestScore, style }: GameCardProps) {
+export function GameCard({ game, best, style }: GameCardProps) {
   const { t } = useTranslation()
   const { Preview } = game
 
@@ -34,7 +34,7 @@ export function GameCard({ game, bestScore, style }: GameCardProps) {
         <span className={classes.best}>
           <TrophyIcon className={classes.bestIcon} />
           <span className={classes.bestLabel}>{t('dashboard.best')}</span>
-          <span className={classes.bestValue}>{bestScore}</span>
+          <span className={classes.bestValue}>{best}</span>
         </span>
         <span className={classes.play}>
           <PlayIcon className={classes.playIcon} />

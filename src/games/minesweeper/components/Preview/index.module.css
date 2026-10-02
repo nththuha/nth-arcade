@@ -1,0 +1,9 @@
+.board {
+  --cell-size: 24px;
+
+  display: grid;
+  border: 3px solid;
+  border-color: var(--bevel-shadow) var(--bevel-light) var(--bevel-light) var(--bevel-shadow);
+  background: var(--face);
+  box-shadow: 0 0 0 6px var(--face);
+}

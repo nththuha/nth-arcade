@@ -2,11 +2,12 @@
 
 A collection of small browser games built with Vite, React and TypeScript, with an English / Vietnamese UI.
 
-| Route    | Page                                     |
-| -------- | ---------------------------------------- |
-| `/`      | Dashboard to pick a game                 |
-| `/2048`  | 2048: arrow keys or swipe                |
-| `/snake` | Snake: arrow keys, Space to pause, swipe |
+| Route          | Page                                                                                         |
+| -------------- | -------------------------------------------------------------------------------------------- |
+| `/`            | Dashboard to pick a game                                                                     |
+| `/2048`        | 2048: arrow keys or swipe                                                                    |
+| `/snake`       | Snake: arrow keys, Space to pause, swipe                                                     |
+| `/minesweeper` | Minesweeper (classic Windows XP look): click, right-click / long-press to flag, F2 / F4 / F5 |
 
 ## Getting started
 
@@ -31,6 +32,7 @@ src/
     registry.ts        games listed on the dashboard
     2048/              index.tsx (game page), styles/colors.css, logic/, hooks/, components/
     snake/             index.tsx (game page), styles/colors.css, logic/, hooks/, components/
+    minesweeper/       index.tsx (game page), styles/colors.css, logic/, hooks/, components/
 ```
 
 ### Conventions

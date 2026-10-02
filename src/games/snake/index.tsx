@@ -87,7 +87,7 @@ export default function SnakeGame() {
             {!started && !gameOver && (
               <div className={`${classes.overlay} ${classes.startOverlay}`}>
                 <div className={classes.startEmoji}>🎮</div>
-                <span className={classes.startText}>{t('snake.pressToStart')}</span>
+                <span className={classes.startText}>{t('snake.press_to_start')}</span>
                 <div className={classes.startKeys}>
                   {['↑', '↓', '←', '→'].map((k) => (
                     <kbd key={k} className={classes.startKey}>

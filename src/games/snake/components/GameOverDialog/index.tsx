@@ -32,12 +32,12 @@ export function GameOverDialog({ isOpen, score, highScore, onRestart }: GameOver
         <div className={classes.header}>
           <div className={classes.emoji}>{isNewHigh ? '🏆' : '💀'}</div>
           <h2 id="snake-game-over-title" className={classes.title}>
-            {t('snake.gameOver')}
+            {t('snake.game_over')}
           </h2>
           {isNewHigh && (
             <div className={classes.badge}>
               <CrownIcon />
-              {t('snake.newHighScore')}
+              {t('snake.new_high_score')}
             </div>
           )}
         </div>
@@ -48,7 +48,7 @@ export function GameOverDialog({ isOpen, score, highScore, onRestart }: GameOver
             <div className={classes.cardIcon}>
               <ZapIcon />
             </div>
-            <span className={classes.cardLabel}>{t('snake.finalScore')}</span>
+            <span className={classes.cardLabel}>{t('snake.final_score')}</span>
             <span className={classes.cardValue}>{score}</span>
           </div>
 
@@ -57,7 +57,7 @@ export function GameOverDialog({ isOpen, score, highScore, onRestart }: GameOver
             <div className={classes.cardIcon}>
               <TrophyIcon />
             </div>
-            <span className={classes.cardLabel}>{t('snake.bestScore')}</span>
+            <span className={classes.cardLabel}>{t('snake.best_score')}</span>
             <span className={classes.cardValue}>{highScore}</span>
           </div>
         </div>

@@ -26,17 +26,17 @@ export function StatisticsDialog({
   const s = stats[difficulty]
 
   const rows = [
-    [t('minesweeper.statPlayed'), s.played],
-    [t('minesweeper.statWon'), s.won],
-    [t('minesweeper.statPercentage'), `${winPercentage(s)}%`],
-    [t('minesweeper.statLongestWin'), s.longestWinStreak],
-    [t('minesweeper.statLongestLose'), s.longestLoseStreak],
-    [t('minesweeper.statCurrentStreak'), s.currentStreak],
+    [t('minesweeper.stat_played'), s.played],
+    [t('minesweeper.stat_won'), s.won],
+    [t('minesweeper.stat_percentage'), `${winPercentage(s)}%`],
+    [t('minesweeper.stat_longest_win'), s.longestWinStreak],
+    [t('minesweeper.stat_longest_lose'), s.longestLoseStreak],
+    [t('minesweeper.stat_current_streak'), s.currentStreak],
   ] as const
 
   const footer = confirmReset ? (
     <>
-      <span className={classes.confirm}>{t('minesweeper.resetConfirm')}</span>
+      <span className={classes.confirm}>{t('minesweeper.reset_confirm')}</span>
       <Button
         onClick={() => {
           onChange(emptyStats())
@@ -83,9 +83,9 @@ export function StatisticsDialog({
 
         <div className={classes.details}>
           <div>
-            <h3 className={classes.heading}>{t('minesweeper.bestTimes')}</h3>
+            <h3 className={classes.heading}>{t('minesweeper.best_times')}</h3>
             {s.bestTimes.length === 0 ? (
-              <p className={classes.muted}>{t('minesweeper.noTimes')}</p>
+              <p className={classes.muted}>{t('minesweeper.no_times')}</p>
             ) : (
               <ol className={classes.times}>
                 {s.bestTimes.map((best, i) => (

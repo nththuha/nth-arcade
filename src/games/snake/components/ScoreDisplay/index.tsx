@@ -28,7 +28,7 @@ export function ScoreDisplay({ score, highScore }: ScoreDisplayProps) {
       <div className={`${classes.box} ${classes.bestBox}`}>
         <TrophyIcon className={`${classes.icon} ${classes.iconPurple}`} />
         <div className={classes.texts}>
-          <span className={classes.label}>{t('snake.bestScore')}</span>
+          <span className={classes.label}>{t('snake.best_score')}</span>
           <span className={`${classes.value} ${classes.valuePurple}`}>{highScore}</span>
         </div>
       </div>

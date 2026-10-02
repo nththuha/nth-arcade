@@ -54,14 +54,14 @@ export function OptionsDialog({ settings, onSave, onClose }: OptionsDialogProps)
     ],
   ] as const
 
-  const checkbox = (key: 'animations' | 'questionMarks') => (
+  const checkbox = (key: 'animations' | 'questionMarks', label: string) => (
     <label className={classes.checkbox}>
       <input
         type="checkbox"
         checked={draft[key]}
         onChange={(e) => setDraft({ ...draft, [key]: e.target.checked })}
       />
-      {t(`minesweeper.${key}`)}
+      {label}
     </label>
   )
 
@@ -86,7 +86,7 @@ export function OptionsDialog({ settings, onSave, onClose }: OptionsDialogProps)
         <div className={classes.difficulties}>
           <div className={classes.column}>
             {RANKED_DIFFICULTIES.map((id) =>
-              difficultyOption(id, t('minesweeper.difficultyDetail', { ...DIFFICULTIES[id] })),
+              difficultyOption(id, t('minesweeper.difficulty_detail', { ...DIFFICULTIES[id] })),
             )}
           </div>
           <div className={classes.column}>
@@ -110,8 +110,8 @@ export function OptionsDialog({ settings, onSave, onClose }: OptionsDialogProps)
       </fieldset>
 
       <div className={classes.checkboxes}>
-        {checkbox('animations')}
-        {checkbox('questionMarks')}
+        {checkbox('animations', t('minesweeper.animations'))}
+        {checkbox('questionMarks', t('minesweeper.question_marks'))}
       </div>
     </Dialog>
   )

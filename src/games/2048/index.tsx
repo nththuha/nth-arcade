@@ -21,7 +21,7 @@ export default function Game2048() {
         <h1 className={classes.header}>2048</h1>
         <Score score={score} bestScore={bestScore} />
         <Button fullWidth onClick={resetGame}>
-          {t('game2048.newGame')}
+          {t('game2048.new_game')}
         </Button>
         <Instruction />
         <Board

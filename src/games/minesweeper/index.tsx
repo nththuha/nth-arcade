@@ -108,10 +108,10 @@ export default function Minesweeper() {
 
   const menus: Menu[] = [
     {
-      label: t('minesweeper.menuGame'),
+      label: t('minesweeper.menu_game'),
       items: [
         {
-          label: t('minesweeper.newGame'),
+          label: t('minesweeper.new_game'),
           shortcut: 'F2',
           onSelect: () => requestNewGame(() => startNewGame()),
         },
@@ -122,7 +122,7 @@ export default function Minesweeper() {
           onSelect: () => changeSettings({ ...settings, difficulty }),
         })),
         {
-          label: t('minesweeper.customMenu'),
+          label: t('minesweeper.custom_menu'),
           checked: settings.difficulty === 'custom',
           onSelect: () => setDialog({ type: 'options' }),
         },
@@ -147,8 +147,8 @@ export default function Minesweeper() {
       ],
     },
     {
-      label: t('minesweeper.menuHelp'),
-      items: [{ label: t('minesweeper.howToPlay'), onSelect: () => setDialog({ type: 'help' }) }],
+      label: t('minesweeper.menu_help'),
+      items: [{ label: t('minesweeper.how_to_play'), onSelect: () => setDialog({ type: 'help' }) }],
     },
   ]
 

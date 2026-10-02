@@ -5,8 +5,8 @@ export function HowToPlay() {
   const { t } = useTranslation()
 
   const items = [
-    { keys: ['↑', '↓', '←', '→'], label: t('snake.guideMove') },
-    { keys: ['␣'], label: t('snake.guidePause') },
+    { keys: ['↑', '↓', '←', '→'], label: t('snake.guide_move') },
+    { keys: ['␣'], label: t('snake.guide_pause') },
   ]
 
   return (

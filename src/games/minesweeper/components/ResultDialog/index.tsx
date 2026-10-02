@@ -27,39 +27,39 @@ export function ResultDialog({ result, onExit, onRestart, onPlayAgain }: ResultD
 
   return (
     <Dialog
-      title={won ? t('minesweeper.wonTitle') : t('minesweeper.lostTitle')}
+      title={won ? t('minesweeper.won_title') : t('minesweeper.lost_title')}
       onClose={onPlayAgain}
       footer={
         <>
           <Button onClick={onExit}>{t('minesweeper.exit')}</Button>
-          {!won && <Button onClick={onRestart}>{t('minesweeper.restartThisGame')}</Button>}
+          {!won && <Button onClick={onRestart}>{t('minesweeper.restart_this_game')}</Button>}
           <Button data-autofocus onClick={onPlayAgain}>
-            {t('minesweeper.playAgain')}
+            {t('minesweeper.play_again')}
           </Button>
         </>
       }
     >
       <p className={classes.message}>
-        {won ? t('minesweeper.wonMessage') : t('minesweeper.lostMessage')}
+        {won ? t('minesweeper.won_message') : t('minesweeper.lost_message')}
       </p>
 
       {won && bestTimeRank === 0 && (
-        <p className={classes.highlight}>{t('minesweeper.newBestTime')}</p>
+        <p className={classes.highlight}>{t('minesweeper.new_best_time')}</p>
       )}
 
       <div className={classes.columns}>
         <ul className={classes.list}>
-          <li>{t('minesweeper.resultTime', { value: time })}</li>
+          <li>{t('minesweeper.result_time', { value: time })}</li>
           {stats && (
             <li>
               {bestTime === undefined
-                ? t('minesweeper.resultBestTimeNone')
-                : t('minesweeper.resultBestTime', { value: bestTime })}
+                ? t('minesweeper.result_best_time_none')
+                : t('minesweeper.result_best_time', { value: bestTime })}
             </li>
           )}
           {won && (
             <li>
-              {t('minesweeper.resultDate', {
+              {t('minesweeper.result_date', {
                 value: new Date(date).toLocaleDateString(i18n.resolvedLanguage),
               })}
             </li>
@@ -67,14 +67,14 @@ export function ResultDialog({ result, onExit, onRestart, onPlayAgain }: ResultD
         </ul>
         {stats && (
           <ul className={classes.list}>
-            <li>{t('minesweeper.resultPlayed', { value: stats.played })}</li>
-            <li>{t('minesweeper.resultWon', { value: stats.won })}</li>
-            <li>{t('minesweeper.resultPercentage', { value: winPercentage(stats) })}</li>
+            <li>{t('minesweeper.result_played', { value: stats.played })}</li>
+            <li>{t('minesweeper.result_won', { value: stats.won })}</li>
+            <li>{t('minesweeper.result_percentage', { value: winPercentage(stats) })}</li>
           </ul>
         )}
       </div>
 
-      {!stats && <p className={classes.note}>{t('minesweeper.customNoStats')}</p>}
+      {!stats && <p className={classes.note}>{t('minesweeper.custom_no_stats')}</p>}
     </Dialog>
   )
 }

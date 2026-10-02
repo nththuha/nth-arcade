@@ -25,14 +25,14 @@ export function Scoreboard({
 
   return (
     <div className={classes.panel}>
-      <LedDisplay value={minesLeft} label={t('minesweeper.minesLeft')} />
+      <LedDisplay value={minesLeft} label={t('minesweeper.mines_left')} />
 
       <div className={classes.center}>
         <button
           type="button"
           className={classes.face}
-          aria-label={t('minesweeper.newGame')}
-          title={`${t('minesweeper.newGame')} (F2)`}
+          aria-label={t('minesweeper.new_game')}
+          title={`${t('minesweeper.new_game')} (F2)`}
           onClick={onNewGame}
         >
           <Smiley mood={mood} className={classes.smiley} />
@@ -42,8 +42,8 @@ export function Scoreboard({
           type="button"
           className={classes.flagMode}
           aria-pressed={flagMode}
-          aria-label={t('minesweeper.flagMode')}
-          title={t('minesweeper.flagMode')}
+          aria-label={t('minesweeper.flag_mode')}
+          title={t('minesweeper.flag_mode')}
           onClick={onToggleFlagMode}
         >
           <FlagIcon className={classes.flagIcon} />

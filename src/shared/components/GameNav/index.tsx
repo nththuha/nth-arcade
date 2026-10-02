@@ -15,7 +15,7 @@ export function GameNav({ className }: GameNavProps) {
     <nav className={`${classes.root} ${className ?? ''}`}>
       <Link to="/" className={classes.back}>
         <ArrowLeftIcon className={classes.backIcon} />
-        {t('common.backToArcade')}
+        {t('common.back_to_arcade')}
       </Link>
       <LanguageToggle />
     </nav>

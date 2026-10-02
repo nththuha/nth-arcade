@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer className={classes.footer}>
-      <span>{t('common.madeBy')}</span>
+      <span>{t('common.made_by')}</span>
       <a href={GITHUB_REPO_2048} target="_blank" rel="noreferrer" aria-label="GitHub">
         <img src="/github-icon.svg" width={30} height={30} alt="" />
       </a>

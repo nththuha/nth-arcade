@@ -31,7 +31,7 @@ export default function Dashboard() {
           <span className={classes.cursor} aria-hidden="true">
             ▶
           </span>
-          {t('dashboard.selectGame')}
+          {t('dashboard.select_game')}
         </h2>
 
         <div className={classes.grid}>
@@ -48,13 +48,13 @@ export default function Dashboard() {
             <div className={classes.comingSoonIcon} aria-hidden="true">
               ?
             </div>
-            <p className={classes.comingSoonTitle}>{t('dashboard.comingSoon')}</p>
-            <p className={classes.comingSoonHint}>{t('dashboard.comingSoonHint')}</p>
+            <p className={classes.comingSoonTitle}>{t('dashboard.coming_soon')}</p>
+            <p className={classes.comingSoonHint}>{t('dashboard.coming_soon_hint')}</p>
           </div>
         </div>
       </main>
 
-      <footer className={classes.footer}>{t('common.madeBy')}</footer>
+      <footer className={classes.footer}>{t('common.made_by')}</footer>
     </div>
   )
 }

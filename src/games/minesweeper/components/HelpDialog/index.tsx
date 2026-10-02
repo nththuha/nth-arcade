@@ -10,7 +10,7 @@ export function HelpDialog({ onClose }: { onClose: () => void }) {
 
   return (
     <Dialog
-      title={t('minesweeper.howToPlay')}
+      title={t('minesweeper.how_to_play')}
       onClose={onClose}
       footer={
         <Button data-autofocus onClick={onClose}>

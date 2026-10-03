@@ -1,0 +1,16 @@
+.canvas {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4.6 / 2.8;
+  transition: opacity 0.2s;
+}
+
+.small {
+  width: 78%;
+  margin: 0 auto;
+}
+
+.dimmed {
+  opacity: 0.3;
+  filter: grayscale(1);
+}

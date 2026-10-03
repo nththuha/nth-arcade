@@ -13,6 +13,7 @@ A collection of small browser games built with Vite, React and TypeScript, with 
 | `/minesweeper` | Minesweeper (classic Windows XP look): click, right-click / long-press to flag, F2 / F4 / F5 |
 | `/flappy-bird` | Flappy Bird: Space / ↑ / click / tap to flap, P or Esc to pause                              |
 | `/dino`        | Dino (Chrome offline game): Space / ↑ / tap to jump (hold for higher), ↓ to duck             |
+| `/tetris`      | Tetris: ← → ↓ move, ↑ / X / Z rotate, Space hard drop, C hold, P pause, swipe / tap on touch |
 
 ## Getting started
 
@@ -40,6 +41,7 @@ src/
     minesweeper/       index.tsx (game page), styles/colors.css, logic/, hooks/, components/
     flappy-bird/       index.tsx (game page), styles/colors.css, logic/, render/ (canvas), hooks/, components/
     dino/              index.tsx (game page), styles/colors.css, logic/, render/ (canvas), hooks/, components/
+    tetris/            index.tsx (game page), styles/colors.css, logic/, render/ (canvas), hooks/, components/
 ```
 
 ### Conventions

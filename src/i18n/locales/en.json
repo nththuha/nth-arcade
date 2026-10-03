@@ -41,6 +41,11 @@
       "title": "Dino",
       "description": "Run, jump over cacti and duck under pterodactyls. The desert only gets faster.",
       "controls": "Space · ↑ · ↓ · Tap"
+    },
+    "tetris": {
+      "title": "Tetris",
+      "description": "Rotate and drop the falling blocks to complete lines. Clear four at once for a Tetris!",
+      "controls": "← → ↓ · ↑ / X / Z · Space · C · Swipe"
     }
   },
   "game2048": {
@@ -161,5 +166,43 @@
     "high_score": "High score",
     "stage": "Dino game",
     "controls_hint": "Space / ↑ to jump (hold to jump higher) · ↓ to duck"
+  },
+  "tetris": {
+    "score": "Score",
+    "level": "Level",
+    "lines": "Lines",
+    "best": "Best",
+    "hold": "Hold",
+    "next": "Next",
+    "ready_title": "Ready?",
+    "ready_hint": "Complete horizontal lines to clear them. The game speeds up every 10 lines.",
+    "start": "Start",
+    "paused": "Paused",
+    "resume": "Resume",
+    "restart": "Restart",
+    "game_over": "Game over",
+    "new_best": "New high score!",
+    "play_again": "Play again",
+    "board": "Tetris board",
+    "back_to_back": "Back-to-back",
+    "combo": "Combo ×{{value}}",
+    "perfect_clear": "Perfect clear",
+    "clear": {
+      "single": "Single",
+      "double": "Double",
+      "triple": "Triple",
+      "tetris": "Tetris!",
+      "t_spin": "T-Spin",
+      "t_spin_single": "T-Spin Single",
+      "t_spin_double": "T-Spin Double",
+      "t_spin_triple": "T-Spin Triple"
+    },
+    "move_left": "Move left",
+    "move_right": "Move right",
+    "soft_drop": "Soft drop",
+    "hard_drop": "Hard drop",
+    "rotate_left": "Rotate left",
+    "rotate_right": "Rotate right",
+    "controls_hint": "← → move · ↓ soft drop · ↑ / X rotate right · Z rotate left · Space hard drop · C hold · P / Esc pause"
   }
 }

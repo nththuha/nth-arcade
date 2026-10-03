@@ -1,0 +1,13 @@
+.frame {
+  padding: 4px;
+  border: 2px solid var(--frame);
+  border-radius: 8px;
+  background: var(--board);
+  box-shadow: 0 0 18px var(--frame-glow);
+}
+
+.canvas {
+  display: block;
+  width: 90px;
+  height: 180px;
+}

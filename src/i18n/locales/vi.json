@@ -41,6 +41,11 @@
       "title": "Khủng long",
       "description": "Chạy, nhảy qua xương rồng và cúi né thằn lằn bay. Sa mạc sẽ ngày càng nhanh hơn.",
       "controls": "Space · ↑ · ↓ · Chạm"
+    },
+    "tetris": {
+      "title": "Xếp gạch",
+      "description": "Xoay và thả các khối gạch để lấp đầy hàng. Xóa bốn hàng cùng lúc để ghi Tetris!",
+      "controls": "← → ↓ · ↑ / X / Z · Space · C · Vuốt"
     }
   },
   "game2048": {
@@ -161,5 +166,43 @@
     "high_score": "Kỷ lục",
     "stage": "Màn chơi Khủng long",
     "controls_hint": "Space / ↑ để nhảy (giữ để nhảy cao hơn) · ↓ để cúi"
+  },
+  "tetris": {
+    "score": "Điểm",
+    "level": "Cấp độ",
+    "lines": "Hàng",
+    "best": "Kỷ lục",
+    "hold": "Giữ",
+    "next": "Kế tiếp",
+    "ready_title": "Sẵn sàng?",
+    "ready_hint": "Lấp đầy một hàng ngang để xóa nó. Tốc độ tăng sau mỗi 10 hàng.",
+    "start": "Bắt đầu",
+    "paused": "Tạm dừng",
+    "resume": "Tiếp tục",
+    "restart": "Chơi lại từ đầu",
+    "game_over": "Kết thúc",
+    "new_best": "Kỷ lục mới!",
+    "play_again": "Chơi lại",
+    "board": "Bàn xếp gạch",
+    "back_to_back": "Liên tiếp",
+    "combo": "Combo ×{{value}}",
+    "perfect_clear": "Sạch bàn",
+    "clear": {
+      "single": "Một hàng",
+      "double": "Hai hàng",
+      "triple": "Ba hàng",
+      "tetris": "Tetris!",
+      "t_spin": "T-Spin",
+      "t_spin_single": "T-Spin một hàng",
+      "t_spin_double": "T-Spin hai hàng",
+      "t_spin_triple": "T-Spin ba hàng"
+    },
+    "move_left": "Sang trái",
+    "move_right": "Sang phải",
+    "soft_drop": "Rơi nhanh",
+    "hard_drop": "Thả thẳng",
+    "rotate_left": "Xoay trái",
+    "rotate_right": "Xoay phải",
+    "controls_hint": "← → di chuyển · ↓ rơi nhanh · ↑ / X xoay phải · Z xoay trái · Space thả thẳng · C giữ khối · P / Esc tạm dừng"
   }
 }

@@ -1,0 +1,58 @@
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.control {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border: 1px solid var(--control-border);
+  border-radius: 14px;
+  background: var(--control);
+  box-shadow: 0 4px 0 var(--panel-shadow);
+  color: var(--control-text);
+  font: inherit;
+  cursor: pointer;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.control:active {
+  transform: translateY(2px);
+  background: var(--control-pressed);
+  box-shadow: 0 2px 0 var(--panel-shadow);
+}
+
+.wide {
+  border-color: var(--button-edge);
+  background: var(--button);
+  color: var(--button-text);
+}
+
+.wide:active {
+  background: var(--button-hover);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.mirrored {
+  transform: scaleX(-1);
+}
+
+.text {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}

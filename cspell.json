@@ -2,7 +2,7 @@
   "version": "0.2",
   "language": "en,vi",
   "import": ["@cspell/dict-vi-vn/cspell-ext.json"],
-  "words": ["nums", "scanline", "scanlines", "unmute"],
+  "words": ["JLSTZ", "nums", "scanline", "scanlines", "tetris", "unmute"],
   "ignorePaths": ["node_modules", "dist", "yarn.lock", "*.svg"],
-  "ignoreRegExpList": ["/'[.oyLbwrRW]{4,}'/g"]
+  "ignoreRegExpList": ["/'[.oyLbwrRW]{4,}'/g", "/'[.IOTSZJL]{10}'/g"]
 }

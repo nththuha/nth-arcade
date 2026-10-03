@@ -4,6 +4,7 @@ export const STORAGE_KEYS = {
   BEST_SNAKE: 'nth-arcade:snake:best-score',
   BEST_FLAPPY: 'nth-arcade:flappy-bird:best-score',
   BEST_DINO: 'nth-arcade:dino:best-score',
+  BEST_TETRIS: 'nth-arcade:tetris:best-score',
   MINESWEEPER_SETTINGS: 'nth-arcade:minesweeper:settings',
   MINESWEEPER_STATS: 'nth-arcade:minesweeper:stats',
 }

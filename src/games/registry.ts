@@ -8,9 +8,10 @@ import PreviewMinesweeper from './minesweeper/components/Preview'
 import { loadSettings } from './minesweeper/hooks/useSettings'
 import { loadStats } from './minesweeper/hooks/useStats'
 import PreviewSnake from './snake/components/Preview'
+import PreviewTetris from './tetris/components/Preview'
 
 export interface GameEntry {
-  id: '2048' | 'snake' | 'minesweeper' | 'flappy_bird' | 'dino'
+  id: '2048' | 'snake' | 'minesweeper' | 'flappy_bird' | 'dino' | 'tetris'
   path: string
   loadBest: (t: TFunction) => string
   accent: string
@@ -63,5 +64,13 @@ export const GAMES: GameEntry[] = [
     accent: 'var(--color-accent-dino)',
     Preview: PreviewDino,
     Component: lazy(() => import('./dino')),
+  },
+  {
+    id: 'tetris',
+    path: '/tetris',
+    loadBest: () => String(loadNumber(STORAGE_KEYS.BEST_TETRIS)),
+    accent: 'var(--color-accent-tetris)',
+    Preview: PreviewTetris,
+    Component: lazy(() => import('./tetris')),
   },
 ]

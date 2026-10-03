@@ -107,6 +107,12 @@ export const ChevronUpIcon = createIcon(<path d="m18 15-6-6-6 6" />)
 export const ChevronDownIcon = createIcon(<path d="m6 9 6 6 6-6" />)
 export const ChevronLeftIcon = createIcon(<path d="m15 18-6-6 6-6" />)
 export const ChevronRightIcon = createIcon(<path d="m9 18 6-6-6-6" />)
+export const ChevronsDownIcon = createIcon(
+  <>
+    <path d="m7 6 5 5 5-5" />
+    <path d="m7 13 5 5 5-5" />
+  </>,
+)
 
 function createFilledIcon(children: ReactNode) {
   return function Icon({ size = '1em', ...props }: IconProps) {

@@ -1,0 +1,117 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  border-radius: inherit;
+  background: var(--overlay);
+  backdrop-filter: blur(2px);
+  text-align: center;
+  animation: appear 0.2s ease-out;
+}
+
+.title {
+  margin: 0;
+  color: var(--label);
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(10px, calc(var(--cell, 32px) * 0.5), 16px);
+  line-height: 1.5;
+  white-space: nowrap;
+  text-shadow: 0 0 12px var(--frame-glow);
+}
+
+.over {
+  color: var(--piece-z);
+}
+
+.text {
+  max-width: 220px;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.best {
+  margin: 0;
+  color: var(--highlight);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4px 16px;
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.summary dt {
+  color: var(--text-muted);
+  text-align: left;
+}
+
+.summary dd {
+  margin: 0;
+  color: var(--text);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.button,
+.secondary {
+  min-width: min(140px, 100%);
+  padding: 10px 18px;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button {
+  border: 0;
+  background: var(--button);
+  box-shadow: 0 4px 0 var(--button-edge);
+  color: var(--button-text);
+}
+
+.button:hover {
+  background: var(--button-hover);
+}
+
+.button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 var(--button-edge);
+}
+
+.secondary {
+  border: 1px solid var(--control-border);
+  background: var(--control);
+  color: var(--control-text);
+}
+
+.secondary:hover {
+  background: var(--control-pressed);
+}
+
+.button:focus-visible,
+.secondary:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,49 @@
+.theme-tetris {
+  --page: #070b1a;
+  --page-glow-a: rgba(34, 211, 238, 0.14);
+  --page-glow-b: rgba(168, 85, 247, 0.14);
+  --page-grid: rgba(255, 255, 255, 0.025);
+
+  --panel: rgba(15, 21, 48, 0.85);
+  --panel-border: #253063;
+  --panel-shadow: rgba(0, 0, 0, 0.45);
+
+  --board: #0a0f24;
+  --grid: rgba(255, 255, 255, 0.06);
+  --frame: #3a4a94;
+  --frame-glow: rgba(34, 211, 238, 0.3);
+
+  --text: #e6ebff;
+  --text-muted: #8a94c7;
+  --label: #67e8f9;
+  --highlight: #facc15;
+
+  --piece-i: #22d3ee;
+  --piece-o: #facc15;
+  --piece-t: #a855f7;
+  --piece-s: #22c55e;
+  --piece-z: #ef4444;
+  --piece-j: #3b82f6;
+  --piece-l: #f97316;
+  --block-highlight: rgba(255, 255, 255, 0.45);
+  --block-shade: rgba(0, 0, 0, 0.32);
+  --flash: #ffffff;
+
+  --button: #22d3ee;
+  --button-hover: #67e8f9;
+  --button-edge: #0e7490;
+  --button-text: #04121a;
+  --control: #1a2350;
+  --control-pressed: #26326e;
+  --control-border: #33408a;
+  --control-text: #e6ebff;
+
+  --overlay: rgba(5, 8, 22, 0.78);
+
+  --nav-bg: rgba(15, 21, 48, 0.85);
+  --nav-hover-bg: #1a2350;
+  --nav-border: var(--panel-border);
+  --nav-fg: var(--text);
+  --nav-active-bg: var(--button);
+  --nav-active-fg: var(--button-text);
+}

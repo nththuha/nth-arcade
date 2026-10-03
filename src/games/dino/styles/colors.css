@@ -1,0 +1,16 @@
+.theme-dino {
+  --page: #f7f7f7;
+  --bg: #fff;
+  --ink: #535353;
+  --ink-soft: #757575;
+  --cloud: #dadada;
+  --eye: #fff;
+  --frame-shadow: rgba(0, 0, 0, 0.08);
+
+  --nav-bg: #fff;
+  --nav-hover-bg: #f0f0f0;
+  --nav-border: #dadada;
+  --nav-fg: #535353;
+  --nav-active-bg: #535353;
+  --nav-active-fg: #fff;
+}

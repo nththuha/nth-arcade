@@ -2,6 +2,7 @@ import { STORAGE_KEYS, loadNumber } from '@/shared/storage'
 import type { TFunction } from 'i18next'
 import { lazy, type ComponentType, type LazyExoticComponent } from 'react'
 import Preview2048 from './2048/components/Preview'
+import PreviewDino from './dino/components/Preview'
 import PreviewFlappy from './flappy-bird/components/Preview'
 import PreviewMinesweeper from './minesweeper/components/Preview'
 import { loadSettings } from './minesweeper/hooks/useSettings'
@@ -9,7 +10,7 @@ import { loadStats } from './minesweeper/hooks/useStats'
 import PreviewSnake from './snake/components/Preview'
 
 export interface GameEntry {
-  id: '2048' | 'snake' | 'minesweeper' | 'flappy_bird'
+  id: '2048' | 'snake' | 'minesweeper' | 'flappy_bird' | 'dino'
   path: string
   loadBest: (t: TFunction) => string
   accent: string
@@ -54,5 +55,13 @@ export const GAMES: GameEntry[] = [
     accent: 'var(--color-accent-flappy)',
     Preview: PreviewFlappy,
     Component: lazy(() => import('./flappy-bird')),
+  },
+  {
+    id: 'dino',
+    path: '/dino',
+    loadBest: () => String(loadNumber(STORAGE_KEYS.BEST_DINO)),
+    accent: 'var(--color-accent-dino)',
+    Preview: PreviewDino,
+    Component: lazy(() => import('./dino')),
   },
 ]

@@ -1,5 +1,7 @@
 import { GAMES } from '@/games/registry'
+import { GithubIcon } from '@/shared/components/icons'
 import { LanguageToggle } from '@/shared/components/LanguageToggle'
+import { LINKS } from '@/shared/links'
 import { useDocumentTitle } from '@/shared/hooks/useDocumentTitle'
 import type { CSSProperties } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -15,6 +17,16 @@ export default function Dashboard() {
       <div className={classes.scanlines} aria-hidden="true" />
 
       <header className={classes.topBar}>
+        <a
+          className={classes.github}
+          href={LINKS.GITHUB}
+          target="_blank"
+          rel="noreferrer"
+          title={t('common.source_code')}
+        >
+          <GithubIcon className={classes.githubIcon} />
+          {t('common.github')}
+        </a>
         <LanguageToggle />
       </header>
 
@@ -54,7 +66,13 @@ export default function Dashboard() {
         </div>
       </main>
 
-      <footer className={classes.footer}>{t('common.made_by')}</footer>
+      <footer className={classes.footer}>
+        <span>{t('common.made_by')}</span>
+        <a className={classes.footerLink} href={LINKS.GITHUB} target="_blank" rel="noreferrer">
+          <GithubIcon className={classes.githubIcon} />
+          {t('common.source_code')}
+        </a>
+      </footer>
     </div>
   )
 }

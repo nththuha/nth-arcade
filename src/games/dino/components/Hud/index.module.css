@@ -1,0 +1,34 @@
+.hud {
+  position: absolute;
+  top: max(72px, 10%);
+  right: max(16px, 4%);
+  display: flex;
+  gap: clamp(10px, 1.6vw, 22px);
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(11px, 1.5vw, 20px);
+  pointer-events: none;
+}
+
+.high {
+  color: var(--ink-soft);
+}
+
+.score {
+  color: var(--ink);
+}
+
+.flash {
+  animation: blink 0.25s steps(1) 4;
+}
+
+@keyframes blink {
+  50% {
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flash {
+    animation: none;
+  }
+}

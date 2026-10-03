@@ -2,7 +2,9 @@
   "common": {
     "back_to_arcade": "Arcade",
     "made_by": "Made with ❤️ by NTH Thu Hà",
-    "language": "Language"
+    "language": "Language",
+    "github": "GitHub",
+    "source_code": "View the source code on GitHub"
   },
   "dashboard": {
     "tagline": "Pick a game and beat your best score",
@@ -34,6 +36,11 @@
       "title": "Flappy Bird",
       "description": "Tap to flap through the gaps between the pipes. One touch is all it takes.",
       "controls": "Space · ↑ · Click · Tap"
+    },
+    "dino": {
+      "title": "Dino",
+      "description": "Run, jump over cacti and duck under pterodactyls. The desert only gets faster.",
+      "controls": "Space · ↑ · ↓ · Tap"
     }
   },
   "game2048": {
@@ -146,5 +153,13 @@
     "paused": "Paused",
     "hint": "Space, ↑ or click to flap",
     "stage": "Flappy Bird game"
+  },
+  "dino": {
+    "start_hint": "Press Space or tap to start",
+    "restart": "Restart",
+    "score": "Score",
+    "high_score": "High score",
+    "stage": "Dino game",
+    "controls_hint": "Space / ↑ to jump (hold to jump higher) · ↓ to duck"
   }
 }

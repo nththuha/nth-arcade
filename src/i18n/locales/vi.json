@@ -2,7 +2,9 @@
   "common": {
     "back_to_arcade": "Sảnh game",
     "made_by": "Được làm với ❤️ bởi NTH Thu Hà",
-    "language": "Ngôn ngữ"
+    "language": "Ngôn ngữ",
+    "github": "GitHub",
+    "source_code": "Xem mã nguồn trên GitHub"
   },
   "dashboard": {
     "tagline": "Chọn một game và phá kỷ lục của chính bạn",
@@ -34,6 +36,11 @@
       "title": "Flappy Bird",
       "description": "Chạm để chú chim vỗ cánh bay qua khe giữa các ống. Chỉ cần một ngón tay.",
       "controls": "Space · ↑ · Nhấn chuột · Chạm"
+    },
+    "dino": {
+      "title": "Khủng long",
+      "description": "Chạy, nhảy qua xương rồng và cúi né thằn lằn bay. Sa mạc sẽ ngày càng nhanh hơn.",
+      "controls": "Space · ↑ · ↓ · Chạm"
     }
   },
   "game2048": {
@@ -146,5 +153,13 @@
     "paused": "Tạm dừng",
     "hint": "Space, ↑ hoặc nhấn chuột để vỗ cánh",
     "stage": "Màn chơi Flappy Bird"
+  },
+  "dino": {
+    "start_hint": "Nhấn Space hoặc chạm để bắt đầu",
+    "restart": "Chơi lại",
+    "score": "Điểm",
+    "high_score": "Kỷ lục",
+    "stage": "Màn chơi Khủng long",
+    "controls_hint": "Space / ↑ để nhảy (giữ để nhảy cao hơn) · ↓ để cúi"
   }
 }

@@ -1,0 +1,88 @@
+.taskbar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  height: 30px;
+  background: linear-gradient(
+    180deg,
+    #3168d5 0%,
+    #4993e6 8%,
+    #2157d7 20%,
+    #2157d7 85%,
+    #1941a5 100%
+  );
+  box-shadow: 0 -1px 0 #0c3fb3;
+  font-family: Tahoma, 'Segoe UI', sans-serif;
+  user-select: none;
+  pointer-events: none;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+  padding: 0 22px 0 14px;
+  border-radius: 0 12px 12px 0;
+  background: linear-gradient(180deg, #5bb25b 0%, #3c943c 12%, #2f8a2f 55%, #1f6f1f 100%);
+  box-shadow:
+    1px 0 6px rgb(0 0 0 / 45%),
+    inset 0 1px 0 rgb(255 255 255 / 35%);
+  color: #fff;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 55%);
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  gap: 6px;
+  min-width: 0;
+  max-width: 160px;
+  height: 24px;
+  padding: 0 10px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: #1e52b7;
+  box-shadow: inset 1px 1px 3px rgb(0 0 0 / 45%);
+  color: #fff;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.taskIcon {
+  display: flex;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+}
+
+.taskIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.tray {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 0 14px;
+  border-left: 1px solid #0c3fb3;
+  background: linear-gradient(180deg, #0f8ee8, #1290e8 50%, #0b77d4);
+  box-shadow: inset 1px 0 0 #1ea1f5;
+  color: #fff;
+  font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .task {
+    display: none;
+  }
+}

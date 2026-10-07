@@ -3,11 +3,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 42px;
+  height: 46px;
   padding: 0 22px;
   border: 0;
   border-radius: 12px;
-  background-color: var(--primary-filled);
+  background: linear-gradient(180deg, #a8937f, var(--primary-filled));
+  box-shadow:
+    0 1px 0 rgb(255 255 255 / 25%) inset,
+    0 4px 0 #7a6755;
   color: var(--score);
   font: inherit;
   font-size: 16px;
@@ -15,15 +18,22 @@
   line-height: 1;
   cursor: pointer;
   user-select: none;
-  transition: background-color 0.15s;
+  transition:
+    background 0.15s,
+    transform 0.08s,
+    box-shadow 0.08s;
+  margin-bottom: 4px;
 }
 
 .button:hover {
-  background-color: var(--primary-filled-hover);
+  background: linear-gradient(180deg, #9c8672, var(--primary-filled-hover));
 }
 
 .button:active {
-  transform: translateY(1px);
+  transform: translateY(3px);
+  box-shadow:
+    0 1px 0 rgb(255 255 255 / 25%) inset,
+    0 1px 0 #7a6755;
 }
 
 .button:focus-visible {

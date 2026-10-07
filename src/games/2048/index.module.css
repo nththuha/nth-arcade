@@ -3,7 +3,10 @@
   --tile-gap: 10px;
   --nav-radius: 12px;
 
-  background-color: var(--primary-bg);
+  background:
+    radial-gradient(40rem 24rem at 50% -8%, rgb(237 193 46 / 22%), transparent 70%),
+    radial-gradient(30rem 24rem at 100% 100%, rgb(245 148 100 / 14%), transparent 70%),
+    var(--primary-bg);
   color: var(--text-color);
   font-family:
     -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
@@ -18,19 +21,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   width: calc(var(--tile-size) * 4 + var(--tile-gap) * 5);
 }
 
 .header {
   margin: 0;
-  font-size: 40px;
-  font-weight: 800;
-  line-height: 1.55;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  background: linear-gradient(180deg, #8f7a66 0%, #6a5641 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 48em) {
   .header {
-    font-size: 52px;
+    font-size: 60px;
   }
 }

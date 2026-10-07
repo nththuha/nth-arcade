@@ -47,11 +47,12 @@ export default function Dashboard() {
         </h2>
 
         <div className={classes.grid}>
-          {GAMES.map((game) => (
+          {GAMES.map((game, index) => (
             <GameCard
               key={game.id}
               game={game}
               best={game.loadBest(t)}
+              index={index}
               style={{ '--accent': game.accent } as CSSProperties}
             />
           ))}

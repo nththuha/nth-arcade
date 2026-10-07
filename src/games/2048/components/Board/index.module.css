@@ -8,7 +8,10 @@
   flex-wrap: wrap;
   padding: calc(var(--tile-gap) * 0.5);
   background-color: var(--secondary-bg);
-  border-radius: 16px;
+  border-radius: 18px;
+  box-shadow:
+    0 0 0 4px #a99a8c inset,
+    0 14px 28px -12px rgb(106 86 65 / 55%);
 }
 
 .cell {
@@ -17,6 +20,7 @@
   margin: calc(var(--tile-gap) * 0.5);
   border-radius: 12px;
   background: var(--cell-bg);
+  box-shadow: 0 2px 0 rgb(0 0 0 / 6%) inset;
   user-select: none;
 }
 

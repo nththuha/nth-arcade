@@ -8,15 +8,19 @@ import classes from './index.module.css'
 type GameCardProps = {
   game: GameEntry
   best: string
+  index: number
   style?: CSSProperties
 }
 
-export function GameCard({ game, best, style }: GameCardProps) {
+export function GameCard({ game, best, index, style }: GameCardProps) {
   const { t } = useTranslation()
   const { Preview } = game
 
   return (
     <Link to={game.path} className={classes.card} style={style}>
+      <span className={classes.badge} aria-hidden="true">
+        {String(index + 1).padStart(2, '0')}
+      </span>
       <div className={classes.screen}>
         <Preview />
       </div>

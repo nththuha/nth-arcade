@@ -9,8 +9,9 @@
   gap: 10px;
   padding: 16px;
   border-radius: inherit;
-  background: var(--overlay);
-  backdrop-filter: blur(2px);
+  background:
+    radial-gradient(circle at 50% 45%, rgb(34 211 238 / 10%), transparent 65%), var(--overlay);
+  backdrop-filter: blur(3px);
   text-align: center;
   animation: appear 0.2s ease-out;
 }
@@ -19,10 +20,12 @@
   margin: 0;
   color: var(--label);
   font-family: 'Press Start 2P', monospace;
-  font-size: clamp(10px, calc(var(--cell, 32px) * 0.5), 16px);
+  font-size: clamp(12px, calc(var(--cell, 32px) * 0.6), 20px);
   line-height: 1.5;
   white-space: nowrap;
-  text-shadow: 0 0 12px var(--frame-glow);
+  text-shadow:
+    0 0 12px var(--frame-glow),
+    0 3px 0 rgb(0 0 0 / 50%);
 }
 
 .over {

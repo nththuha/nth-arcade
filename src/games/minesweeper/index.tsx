@@ -11,6 +11,7 @@ import { MenuBar, type Menu } from './components/MenuBar'
 import { OptionsDialog } from './components/OptionsDialog'
 import { ResultDialog, type GameResult } from './components/ResultDialog'
 import { StatisticsDialog } from './components/StatisticsDialog'
+import { Taskbar } from './components/Taskbar'
 import { Scoreboard } from './components/Scoreboard'
 import type { Mood } from './components/Smiley'
 import { TitleBar } from './components/TitleBar'
@@ -164,7 +165,7 @@ export default function Minesweeper() {
   const closeDialog = () => setDialog(null)
 
   return (
-    <GameLayout className={`theme-minesweeper ${classes.page}`}>
+    <GameLayout className={`theme-minesweeper ${classes.page}`} decor={<Taskbar />}>
       <div className={classes.stack}>
         <div className={classes.window}>
           <TitleBar

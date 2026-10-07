@@ -33,9 +33,14 @@
 .controls {
   position: absolute;
   bottom: 24px;
-  left: 0;
-  right: 0;
+  left: 50%;
+  width: max-content;
+  max-width: calc(100% - 32px);
+  translate: -50% 0;
   margin: 0;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ink) 6%, transparent);
   color: var(--ink-soft);
   font-size: 13px;
   text-align: center;

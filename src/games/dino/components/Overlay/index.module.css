@@ -3,19 +3,38 @@
   top: 38%;
   left: 0;
   right: 0;
-  margin: 0;
+  width: max-content;
+  max-width: calc(100% - 32px);
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: 2px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--bg) 85%, transparent);
   color: var(--ink-soft);
   font-family: 'Inter', system-ui, sans-serif;
   font-size: clamp(13px, 1.5vw, 18px);
   font-weight: 600;
   text-align: center;
   pointer-events: none;
+  animation: bob 1.6s ease-in-out infinite;
+}
+
+@keyframes bob {
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hint {
+    animation: none;
+  }
 }
 
 .over {
   position: absolute;
   inset: 0 0 50% 0;
-  padding-top: 18vh;
+  padding-top: 16vh;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -82,10 +82,10 @@
 
 .title {
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 800;
-  letter-spacing: -0.025em;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
   background: var(--gradient-green-cyan);
   -webkit-background-clip: text;
   background-clip: text;
@@ -99,7 +99,8 @@
   overflow: hidden;
   touch-action: none;
   box-shadow: var(--shadow-board);
-  border: 1px solid var(--surface-green-medium);
+  border: 1px solid var(--surface-green-hover);
+  outline: 4px solid rgb(34 197 94 / 6%);
 }
 
 .overlay {

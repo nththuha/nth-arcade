@@ -1,9 +1,14 @@
 .hud {
   position: absolute;
-  top: max(72px, 10%);
+  top: max(64px, 9%);
   right: max(16px, 4%);
   display: flex;
   gap: clamp(10px, 1.6vw, 22px);
+  padding: 10px 16px;
+  border: 2px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--bg) 80%, transparent);
+  backdrop-filter: blur(4px);
   font-family: 'Press Start 2P', monospace;
   font-size: clamp(11px, 1.5vw, 20px);
   pointer-events: none;

@@ -1,0 +1,4 @@
+.frame {
+  --board-cell: 9px;
+  pointer-events: none;
+}

@@ -1,0 +1,131 @@
+.board {
+  --cell: var(--board-cell, min(40px, calc((100vw - 48px) / 15), calc((100dvh - 330px) / 15)));
+  --size: calc(var(--cell) * 15);
+
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  box-sizing: content-box;
+  padding: calc(var(--cell) * 0.35);
+  border: 3px solid var(--wood-edge);
+  border-radius: 6px;
+  background:
+    repeating-linear-gradient(92deg, rgba(120, 70, 20, 0.07) 0 2px, transparent 2px 9px),
+    radial-gradient(circle at 30% 25%, #ecc57f, var(--wood) 55%, var(--wood-dark));
+  box-shadow:
+    0 2px 0 var(--wood-edge),
+    0 14px 28px rgba(70, 40, 10, 0.35),
+    inset 0 0 0 1px rgba(255, 240, 200, 0.5);
+}
+
+.lattice {
+  position: absolute;
+  top: calc(var(--cell) * 0.35 + var(--cell) / 2);
+  left: calc(var(--cell) * 0.35 + var(--cell) / 2);
+  width: calc(var(--cell) * 14);
+  height: calc(var(--cell) * 14);
+  border: 1.5px solid var(--line);
+  margin: -0.75px;
+  background:
+    linear-gradient(var(--line) 1px, transparent 1px) 0 0 / var(--cell) var(--cell),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0 / var(--cell) var(--cell);
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  top: calc(var(--cell) * var(--r));
+  left: calc(var(--cell) * var(--c));
+  width: calc(var(--cell) * 0.2);
+  height: calc(var(--cell) * 0.2);
+  margin: calc(var(--cell) * -0.1) 0 0 calc(var(--cell) * -0.1);
+  border-radius: 50%;
+  background: var(--line);
+}
+
+.grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(15, var(--cell));
+  grid-auto-rows: var(--cell);
+}
+
+.cell {
+  position: relative;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.cell:disabled {
+  cursor: default;
+}
+
+.cell:focus-visible {
+  outline: 2px solid var(--win);
+  outline-offset: -3px;
+  border-radius: 50%;
+}
+
+/* Hover preview of the stone about to be placed. */
+.cell:not(:disabled)::after {
+  content: '';
+  position: absolute;
+  inset: 12%;
+  border-radius: 50%;
+  background: var(--ghost);
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.cell:not(:disabled):hover::after,
+.cell:not(:disabled):focus-visible::after {
+  opacity: 1;
+}
+
+.stone {
+  position: absolute;
+  inset: 8%;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow:
+    1px 3px 4px rgba(40, 20, 0, 0.45),
+    inset 0 -2px 3px rgba(0, 0, 0, 0.15);
+  animation: drop 0.16s ease-out;
+}
+
+.black {
+  background: radial-gradient(circle at 32% 30%, #6a6a6a, #151515 55%, #000);
+}
+
+.white {
+  background: radial-gradient(circle at 32% 30%, #fff, #f0ece2 50%, #bdb7a8);
+}
+
+.win {
+  box-shadow:
+    0 0 0 3px var(--win),
+    1px 3px 4px rgba(40, 20, 0, 0.45);
+}
+
+.last {
+  width: 22%;
+  height: 22%;
+  border-radius: 50%;
+  background: var(--win);
+}
+
+@keyframes drop {
+  from {
+    transform: scale(1.35);
+    opacity: 0.4;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stone {
+    animation: none;
+  }
+}

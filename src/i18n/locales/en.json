@@ -46,6 +46,11 @@
       "title": "Tetris",
       "description": "Rotate and drop the falling blocks to complete lines. Clear four at once for a Tetris!",
       "controls": "← → ↓ · ↑ / X / Z · Space · C · Swipe"
+    },
+    "gomoku": {
+      "title": "Gomoku",
+      "description": "Classic five-in-a-row on a wooden board. Beat the computer or challenge a friend.",
+      "controls": "Click · Tap"
     }
   },
   "game2048": {
@@ -204,5 +209,26 @@
     "rotate_left": "Rotate left",
     "rotate_right": "Rotate right",
     "controls_hint": "← → move · ↓ soft drop · ↑ / X rotate right · Z rotate left · Space hard drop · C hold · P / Esc pause"
+  },
+  "gomoku": {
+    "board": "Gomoku board",
+    "mode": "Game mode",
+    "mode_ai": "vs Computer",
+    "mode_pvp": "2 players",
+    "side": "Your side",
+    "first": "Black (first)",
+    "second": "White (second)",
+    "player_1": "Black",
+    "player_2": "White",
+    "turn": "{{player}} to move",
+    "thinking": "Computer is thinking…",
+    "you_win": "You win!",
+    "ai_wins": "Computer wins",
+    "wins": "{{player}} wins!",
+    "draw": "Draw",
+    "wins_vs_ai": "Wins vs computer",
+    "new_game": "New game",
+    "undo": "Undo",
+    "hint": "Get five stones in a row — horizontal, vertical or diagonal — to win."
   }
 }

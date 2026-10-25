@@ -3,6 +3,7 @@ import type { TFunction } from 'i18next'
 import { lazy, type ComponentType, type LazyExoticComponent } from 'react'
 import Preview2048 from './2048/components/Preview'
 import PreviewDino from './dino/components/Preview'
+import PreviewGomoku from './gomoku/components/Preview'
 import PreviewFlappy from './flappy-bird/components/Preview'
 import PreviewMinesweeper from './minesweeper/components/Preview'
 import { loadSettings } from './minesweeper/hooks/useSettings'
@@ -11,7 +12,7 @@ import PreviewSnake from './snake/components/Preview'
 import PreviewTetris from './tetris/components/Preview'
 
 export interface GameEntry {
-  id: '2048' | 'snake' | 'minesweeper' | 'flappy_bird' | 'dino' | 'tetris'
+  id: '2048' | 'snake' | 'minesweeper' | 'flappy_bird' | 'dino' | 'tetris' | 'gomoku'
   path: string
   loadBest: (t: TFunction) => string
   accent: string
@@ -72,5 +73,13 @@ export const GAMES: GameEntry[] = [
     accent: 'var(--color-accent-tetris)',
     Preview: PreviewTetris,
     Component: lazy(() => import('./tetris')),
+  },
+  {
+    id: 'gomoku',
+    path: '/gomoku',
+    loadBest: () => String(loadNumber(STORAGE_KEYS.BEST_GOMOKU)),
+    accent: 'var(--color-accent-gomoku)',
+    Preview: PreviewGomoku,
+    Component: lazy(() => import('./gomoku')),
   },
 ]

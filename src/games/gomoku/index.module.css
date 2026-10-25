@@ -1,0 +1,152 @@
+.page {
+  --nav-radius: 10px;
+
+  background:
+    radial-gradient(circle at 20% 15%, var(--page-glow-a), transparent 50%),
+    radial-gradient(circle at 85% 90%, var(--page-glow-b), transparent 50%), var(--page);
+  color: var(--ink);
+  font-family:
+    'Inter',
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 12px;
+}
+
+.segment {
+  display: flex;
+  padding: 3px;
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  background: var(--seg-bg);
+}
+
+.segment button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.segment button[aria-pressed='true'] {
+  background: var(--button);
+  color: var(--button-text);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 4px 16px;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  background: var(--panel);
+  font-size: 16px;
+}
+
+.status[data-over='true'] {
+  border-color: var(--win);
+  font-weight: 700;
+}
+
+.wins {
+  margin-left: 8px;
+  padding-left: 12px;
+  border-left: 1px solid var(--panel-border);
+  color: var(--ink-muted);
+  font-size: 13px;
+}
+
+.stone {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(40, 20, 0, 0.5);
+}
+
+.black {
+  background: radial-gradient(circle at 32% 30%, #6a6a6a, #151515 55%, #000);
+}
+
+.white {
+  background: radial-gradient(circle at 32% 30%, #fff, #f0ece2 50%, #bdb7a8);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 8px 20px;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+.actions button:hover:not(:disabled) {
+  background: var(--seg-bg);
+}
+
+.actions .primary {
+  border-color: var(--button);
+  background: var(--button);
+  color: var(--button-text);
+}
+
+.actions .primary:hover:not(:disabled) {
+  background: var(--button-hover);
+}
+
+.actions button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.segment button:focus-visible,
+.actions button:focus-visible {
+  outline: 2px solid var(--win);
+  outline-offset: 2px;
+}
+
+.hint {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 13px;
+  text-align: center;
+}

@@ -46,6 +46,11 @@
       "title": "Xếp gạch",
       "description": "Xoay và thả các khối gạch để lấp đầy hàng. Xóa bốn hàng cùng lúc để ghi Tetris!",
       "controls": "← → ↓ · ↑ / X / Z · Space · C · Vuốt"
+    },
+    "gomoku": {
+      "title": "Cờ caro",
+      "description": "Cờ caro năm quân liên tiếp trên bàn gỗ cổ điển. Đấu với máy hoặc thách đấu bạn bè.",
+      "controls": "Nhấp · Chạm"
     }
   },
   "game2048": {
@@ -204,5 +209,26 @@
     "rotate_left": "Xoay trái",
     "rotate_right": "Xoay phải",
     "controls_hint": "← → di chuyển · ↓ rơi nhanh · ↑ / X xoay phải · Z xoay trái · Space thả thẳng · C giữ khối · P / Esc tạm dừng"
+  },
+  "gomoku": {
+    "board": "Bàn cờ caro",
+    "mode": "Chế độ chơi",
+    "mode_ai": "Đấu với máy",
+    "mode_pvp": "2 người",
+    "side": "Quân của bạn",
+    "first": "Đen (đi trước)",
+    "second": "Trắng (đi sau)",
+    "player_1": "Đen",
+    "player_2": "Trắng",
+    "turn": "Lượt của quân {{player}}",
+    "thinking": "Máy đang suy nghĩ…",
+    "you_win": "Bạn thắng!",
+    "ai_wins": "Máy thắng",
+    "wins": "Quân {{player}} thắng!",
+    "draw": "Hòa",
+    "wins_vs_ai": "Thắng máy",
+    "new_game": "Ván mới",
+    "undo": "Đi lại",
+    "hint": "Xếp năm quân liên tiếp theo hàng ngang, dọc hoặc chéo để thắng."
   }
 }

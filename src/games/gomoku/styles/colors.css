@@ -1,0 +1,29 @@
+.theme-gomoku {
+  --page: #efe3c8;
+  --page-glow-a: rgba(255, 255, 255, 0.55);
+  --page-glow-b: rgba(176, 125, 62, 0.22);
+
+  --ink: #3b2a1a;
+  --ink-muted: #7a6348;
+  --panel: #f8f0dc;
+  --panel-border: #cdb68a;
+
+  --wood: #e0b46c;
+  --wood-dark: #c4934a;
+  --wood-edge: #8a5a24;
+  --line: #5a3d1c;
+  --ghost: rgba(60, 40, 20, 0.35);
+  --win: #d1352b;
+
+  --button: #7a4a1e;
+  --button-hover: #94601f;
+  --button-text: #fdf3dc;
+  --seg-bg: #e8d8b3;
+
+  --nav-bg: var(--panel);
+  --nav-hover-bg: #efe0bd;
+  --nav-border: var(--panel-border);
+  --nav-fg: var(--ink);
+  --nav-active-bg: var(--button);
+  --nav-active-fg: var(--button-text);
+}

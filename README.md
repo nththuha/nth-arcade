@@ -13,6 +13,7 @@ A collection of small browser games built with Vite, React and TypeScript, with 
 | `/minesweeper` | Minesweeper (classic Windows XP look): click, right-click / long-press to flag, F2 / F4 / F5 |
 | `/flappy-bird` | Flappy Bird: Space / ↑ / click / tap to flap, P or Esc to pause                              |
 | `/dino`        | Dino (Chrome offline game): Space / ↑ / tap to jump (hold for higher), ↓ to duck             |
+| `/gomoku`      | Gomoku (Cờ caro): 5 in a row on 15×15, vs computer or 2 players, undo                        |
 | `/tetris`      | Tetris: ← → ↓ move, ↑ / X / Z rotate, Space hard drop, C hold, P pause, swipe / tap on touch |
 
 ## Getting started

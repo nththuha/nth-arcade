@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { BOARD, CLEAR_POINTS, LOCK, PIECE_TYPES, QUEUE_SIZE, TOTAL_ROWS } from '../config'
-import type { Board, Game, PieceType } from '../types'
+import { BOARD, CLEAR_POINTS, LOCK, PIECE_TYPES, QUEUE_SIZE, TOTAL_ROWS } from '@/games/tetris/config'
+import type { Board, Game, PieceType } from '@/games/tetris/types'
 import {
   collides,
   emptyBoard,
@@ -14,8 +14,8 @@ import {
   rotate,
   spawnPiece,
   tick,
-} from './game'
-import { cellsOf } from './pieces'
+} from '@/games/tetris/logic/game'
+import { cellsOf } from '@/games/tetris/logic/pieces'
 
 const seeded =
   (seed = 1) =>

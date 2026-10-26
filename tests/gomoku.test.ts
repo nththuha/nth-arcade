@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { aiMove } from './ai'
-import { emptyBoard, winLine } from './game'
+import { aiMove } from '@/games/gomoku/logic/ai'
+import { emptyBoard, winLine } from '@/games/gomoku/logic/game'
 
 const put = (cells: [number, number, 1 | 2][]) => {
   const board = emptyBoard()

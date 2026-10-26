@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
-import { DINO, OBSTACLES, PHYSICS, SPEED, WORLD } from '../config'
-import type { World } from '../types'
+import { DINO, OBSTACLES, PHYSICS, SPEED, WORLD } from '@/games/dino/config'
+import { DINO_SPRITES } from '@/games/dino/render/sprites'
+import type { World } from '@/games/dino/types'
 import {
   collides,
   createObstacle,
@@ -12,7 +13,7 @@ import {
   scoreOf,
   setDucking,
   step,
-} from './world'
+} from '@/games/dino/logic/world'
 
 const fixed = (value: number) => () => value
 const run = (world: World, seconds: number, random = fixed(0.5)) => {
@@ -128,5 +129,20 @@ describe('collisions', () => {
     expect(collides({ ...ducking, obstacles: [bird(1)] })).toBe(false)
     expect(collides({ ...ducking, obstacles: [bird(0)] })).toBe(true)
     expect(collides({ ...newWorld(), obstacles: [bird(2)] })).toBe(false)
+  })
+})
+
+describe('dino sprites', () => {
+  it('have rectangular rows matching the collision sizes', () => {
+    for (const [name, rows] of Object.entries(DINO_SPRITES)) {
+      const width = rows[0].length
+      expect(
+        rows.every((row) => row.length === width),
+        name,
+      ).toBe(true)
+      const ducking = name.startsWith('duck')
+      expect(width * DINO.pixel).toBe(ducking ? DINO.duckWidth : DINO.width)
+      expect(rows.length * DINO.pixel).toBe(ducking ? DINO.duckHeight : DINO.height)
+    }
   })
 })

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import type { Board, Tiles } from '../types'
-import { canMove, createRandomTile, lineCells, moveTiles } from './board'
+import type { Board, Tiles } from '@/games/2048/types'
+import { canMove, createRandomTile, lineCells, moveTiles } from '@/games/2048/logic/board'
 
 function fromValues(values: number[][]): { board: Board; tiles: Tiles } {
   const tiles: Tiles = {}

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { Direction } from '../types'
+import { Direction } from '@/games/snake/types'
 import {
   calculateTickInterval,
   getNextHead,
@@ -9,7 +9,7 @@ import {
   positionsEqual,
   spawnFood,
   wrapPosition,
-} from './gameUtils'
+} from '@/games/snake/logic/gameUtils'
 
 describe('getNextHead', () => {
   it('moves one cell in the given direction', () => {

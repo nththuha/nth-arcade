@@ -10,7 +10,15 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "test": "vitest --run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test:2048": "vitest --run tests/2048",
+    "test:dino": "vitest --run tests/dino",
+    "test:flappy-bird": "vitest --run tests/flappy-bird",
+    "test:gomoku": "vitest --run tests/gomoku",
+    "test:minesweeper": "vitest --run tests/minesweeper",
+    "test:snake": "vitest --run tests/snake",
+    "test:tetris": "vitest --run tests/tetris",
+    "test:i18n": "vitest --run tests/i18n"
   },
   "dependencies": {
     "i18next": "^26.4.2",

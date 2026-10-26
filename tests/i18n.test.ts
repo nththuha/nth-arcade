@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import en from './en.json'
-import vi from './vi.json'
+import en from '@/i18n/locales/en.json'
+import vi from '@/i18n/locales/vi.json'
 
 function keyPaths(obj: object, prefix = ''): string[] {
   return Object.entries(obj).flatMap(([key, value]) =>

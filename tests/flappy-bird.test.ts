@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
-import { BIRD, PHYSICS, PIPE, WORLD, medalFor } from '../config'
-import type { World } from '../types'
-import { birdAngle, fall, flap, hitsGround, hitsPipe, newWorld, randomGapTop, step } from './world'
+import { BIRD, PHYSICS, PIPE, WORLD, medalFor } from '@/games/flappy-bird/config'
+import type { World } from '@/games/flappy-bird/types'
+import { birdAngle, fall, flap, hitsGround, hitsPipe, newWorld, randomGapTop, step } from '@/games/flappy-bird/logic/world'
 
 const still = () => 0.5
 

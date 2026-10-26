@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://nth-arcade.vercel.app/sitemap.xml

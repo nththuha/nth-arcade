@@ -230,5 +230,11 @@
     "new_game": "New game",
     "undo": "Undo",
     "hint": "Get five stones in a row — horizontal, vertical or diagonal — to win."
+  },
+  "footer": {
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "docs": "API docs"
   }
 }

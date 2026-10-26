@@ -230,5 +230,11 @@
     "new_game": "Ván mới",
     "undo": "Đi lại",
     "hint": "Xếp năm quân liên tiếp theo hàng ngang, dọc hoặc chéo để thắng."
+  },
+  "footer": {
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "privacy": "Quyền riêng tư",
+    "docs": "Tài liệu API"
   }
 }

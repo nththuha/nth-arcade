@@ -1,6 +1,28 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
   "buildCommand": "yarn build",
   "installCommand": "yarn install --frozen-lockfile",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "routes": [
+    {
+      "src": "^/(?!api/)([^.]*)$",
+      "headers": { "Vary": "Accept" },
+      "continue": true
+    },
+    {
+      "src": "^/(?!api/)([^.]*)$",
+      "has": [{ "type": "header", "key": "accept", "value": ".*text/markdown.*" }],
+      "dest": "/api/page?path=/$1"
+    },
+    {
+      "src": "^/\\.well-known/mcp$",
+      "headers": { "Content-Type": "application/json" },
+      "continue": true
+    },
+    { "handle": "filesystem" },
+    {
+      "src": "^/(2048|snake|minesweeper|flappy-bird|dino|tetris|gomoku)/?$",
+      "dest": "/index.html"
+    },
+    { "src": "^/(.*)$", "dest": "/api/page?path=/$1" }
+  ]
 }

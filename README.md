@@ -16,6 +16,14 @@ A collection of small browser games built with Vite, React and TypeScript, with 
 | `/gomoku`      | Gomoku (Cờ caro): 5 in a row on 15×15, vs computer or 2 players, undo                        |
 | `/tetris`      | Tetris: ← → ↓ move, ↑ / X / Z rotate, Space hard drop, C hold, P pause, swipe / tap on touch |
 
+## For agents and developers
+
+- REST API: `GET /api/games`, `GET /api/games/{id}` (spec: `/openapi.json`, docs: `/docs`, `/developers`)
+- MCP server (Streamable HTTP): `/api/mcp`, manifest at `/.well-known/mcp`
+- `/llms.txt`, `/sitemap.xml`, `/robots.txt`; any page answers `Accept: text/markdown` with Markdown
+- CLI: `cli/` (`node cli/bin.js list`)
+- Page content for `/about`, `/contact`, `/privacy`, `/docs`, `/developers` and the Markdown/404 responses lives in `api/_pages.ts`; routing is in `vercel.json`
+
 ## Getting started
 
 ```bash

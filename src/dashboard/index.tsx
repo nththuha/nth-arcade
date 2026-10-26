@@ -73,6 +73,18 @@ export default function Dashboard() {
           <GithubIcon className={classes.githubIcon} />
           {t('common.source_code')}
         </a>
+        <a className={classes.footerLink} href="/about">
+          {t('footer.about')}
+        </a>
+        <a className={classes.footerLink} href="/contact">
+          {t('footer.contact')}
+        </a>
+        <a className={classes.footerLink} href="/privacy">
+          {t('footer.privacy')}
+        </a>
+        <a className={classes.footerLink} href="/docs">
+          {t('footer.docs')}
+        </a>
       </footer>
     </div>
   )

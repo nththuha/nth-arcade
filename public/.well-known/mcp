@@ -1,0 +1,12 @@
+{
+  "name": "nth-arcade",
+  "title": "NTH Arcade",
+  "version": "1.0.0",
+  "description": "Read-only catalog of the browser games on NTH Arcade.",
+  "websiteUrl": "https://nth-arcade.vercel.app",
+  "protocolVersion": "2025-06-18",
+  "transport": { "type": "streamable-http", "url": "https://nth-arcade.vercel.app/api/mcp" },
+  "remotes": [{ "type": "streamable-http", "url": "https://nth-arcade.vercel.app/api/mcp" }],
+  "authentication": { "required": false },
+  "tools": ["list_games", "get_game"]
+}

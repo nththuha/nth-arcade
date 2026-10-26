@@ -8,30 +8,32 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <meta name="theme-color" content="#0b0820" />
-    <title>NTH Arcade</title>
+    <title>NTH Arcade: Free Browser Games - 2048, Snake, Minesweeper, Tetris, Gomoku</title>
     <meta
       name="description"
-      content="Play 2048, Snake, Minesweeper, Flappy Bird, Dino and Tetris in your browser. English and Vietnamese."
+      content="Play 2048, Snake, Minesweeper, Flappy Bird, Dino, Tetris and Gomoku in your browser. English and Vietnamese."
     />
 
+    <link rel="canonical" href="https://nth-arcade.vercel.app/" />
+    <link rel="alternate" type="text/markdown" href="https://nth-arcade.vercel.app/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="NTH Arcade" />
     <meta property="og:url" content="https://nth-arcade.vercel.app/" />
     <meta property="og:title" content="NTH Arcade" />
     <meta
       property="og:description"
-      content="Play 2048, Snake, Minesweeper, Flappy Bird, Dino and Tetris in your browser. English and Vietnamese."
+      content="Play 2048, Snake, Minesweeper, Flappy Bird, Dino, Tetris and Gomoku in your browser. English and Vietnamese."
     />
     <meta property="og:image" content="https://nth-arcade.vercel.app/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="NTH Arcade game picker with six classic games" />
+    <meta property="og:image:alt" content="NTH Arcade game picker with seven classic games" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="NTH Arcade" />
     <meta
       name="twitter:description"
-      content="Play 2048, Snake, Minesweeper, Flappy Bird, Dino and Tetris in your browser. English and Vietnamese."
+      content="Play 2048, Snake, Minesweeper, Flappy Bird, Dino, Tetris and Gomoku in your browser. English and Vietnamese."
     />
     <meta name="twitter:image" content="https://nth-arcade.vercel.app/og-image.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,9 +42,75 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Press+Start+2P&family=VT323&display=swap"
       rel="stylesheet"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://nth-arcade.vercel.app/#app",
+            "name": "NTH Arcade",
+            "description": "Free browser games: 2048, Snake, Minesweeper, Flappy Bird, Dino, Tetris and Gomoku, in English and Vietnamese.",
+            "url": "https://nth-arcade.vercel.app/",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Any (web browser)",
+            "inLanguage": ["en", "vi"],
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "publisher": { "@id": "https://nth-arcade.vercel.app/#org" }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://nth-arcade.vercel.app/#org",
+            "name": "NTH Arcade",
+            "url": "https://nth-arcade.vercel.app/",
+            "logo": "https://nth-arcade.vercel.app/favicon.svg",
+            "sameAs": ["https://github.com/nththuha/nth-arcade"],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "url": "https://github.com/nththuha/nth-arcade/issues",
+              "availableLanguage": ["English", "Vietnamese"]
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <main>
+        <h1>NTH Arcade</h1>
+        <p>
+          NTH Arcade is a free collection of classic browser games with an English and Vietnamese
+          interface. Pick a game and beat your best score. There is no account and no install, and
+          your best scores stay on your device.
+        </p>
+        <h2>Games</h2>
+        <ul>
+          <li><a href="/2048">2048</a>: Slide the tiles and merge equal numbers to reach 2048.</li>
+          <li>
+            <a href="/snake">Snake</a>: Guide the neon snake, eat the food and grow as long as you
+            can.
+          </li>
+          <li>
+            <a href="/minesweeper">Minesweeper</a>: Clear the minefield without setting off a mine.
+          </li>
+          <li>
+            <a href="/flappy-bird">Flappy Bird</a>: Tap to flap through the gaps between the pipes.
+          </li>
+          <li><a href="/dino">Dino</a>: Run, jump and duck past cacti and birds.</li>
+          <li><a href="/tetris">Tetris</a>: Stack falling blocks and clear lines.</li>
+          <li><a href="/gomoku">Gomoku</a>: Get five in a row on a 15×15 board.</li>
+        </ul>
+      </main>
+      <footer>
+        <nav>
+          <a href="/about">About</a> · <a href="/contact">Contact</a> ·
+          <a href="/privacy">Privacy</a> · <a href="/docs">API docs</a> ·
+          <a href="/developers">Developers</a> · <a href="/llms.txt">llms.txt</a>
+        </nav>
+      </footer>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
